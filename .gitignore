@@ -1,10 +1,14 @@
 # Ignore files or folders to upload to GitHub
 
-/node_modules
+# Folders
 
-# Filles
+node_modules/
+
+# Files
 
 .sass
 .scss
 .env
 .txt
+.exe
+.hintrc
