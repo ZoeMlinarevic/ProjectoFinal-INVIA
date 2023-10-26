@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+:root{
+    /*Fonts*/
+    --Poppins: 'Poppins', sans-serif;
+    /*Palette*/
+    --Blanco: white;
+    --Negro: black;
+    --VioletaClaro:#5D60C0;
+    --VioletaMedio:#835CBF;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: var(--Poppins);
+  color: var(--Blanco);
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+   font-size: 40%;
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+}
+body {
+  background-color: var(--Negro);
+}
+
+/*-----ctrl+D para seleccionar y editar todos los heder al mismo tiempo-----------*/
+header {
+  position: fixed;
+  background-color: var(--Negro);
+  height: 13%;
+  top: 0; left: 0; right: 0;
+  margin: 0 0 0 1%;
+}
+header .logo {
+  font-size: 7.8rem;
+  font-weight: bolder;
+  color: var(--B);
+  margin-left: 2rem;
+}
+header .navbar {
+  position: fixed;
+    top: 0; left: 1rem; right: 0; 
+    padding: 2% 9% 5% 20%;
+    display: flex;
+    font-weight: bold;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .list-container .navbar .list-element:hover {
+  transform: scale(1.1);
+  text-shadow: var(--Blanco);
+}
+header .list-container .navbar .list-element .btn {
+  border: var(--Blanco) solid 0.2rem;
+  border-radius: 3rem 0 3rem 0;
+  padding: 0.5rem 7rem;
+  margin: 0 0 0 3rem;
+}
+header .list-container .navbar .list-element .btn:hover{
+  transform: scale(1.1);
+  background-color: var(--Blanco);
+  color: var(--Negro);
+}
+/*Aca empieza lo que seria el codigo del toggle
+ para el navbar responsive.*/
+header .checkbox-btn {
+  font-size: 5.8rem;
+  float: right;
+  display: none;
+}
+header .checkbox-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+header #checkbox-check {
+  display: none;
+}
+section {
+  display: flex;
+  flex: 1 1 50;
+  margin: 2rem 0;
+  padding-left: 5%;
+  padding-top: 10%;
+}
+.content {
+  margin-right: 3%;
+}
+ section h2 {
+  font-size: 4.9rem;
+}
+section h1 {
+  color: var(--VioletaClaro);
+  font-size: 10.5rem;
+} 
+section p {
+  font-size: 3.4rem;
+}
+section  .btn-container {
+  display: flex;
+  flex: 1 1 30;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding: 0 1rem 0 1rem;
+}
+section .content .btn-container .btn {
+  font-size: 2.9rem;
+  border: var(--Blanco) solid 0.2rem;
+  border-radius: 0.4rem; 
+}
+section .content #cursos {
+  font-weight: bold;
+color: var(--Blanco);
+background-color: var(--VioletaClaro);
+padding: 2rem 5rem 2rem 5rem;
+}
+section .content #estudio {
+  font-weight: bold;
+color: var(--VioletaClaro);
+background-color: var(--Negro);
+padding: 2rem 5rem 2rem 5rem;
+}
+section .btn-container #estudio:hover {
+  transition-duration: 0.5s ;
+  background-color: var(--Blanco);
+  color: var(--VioletaClaro);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+section .btn-container #cursos:hover {
+  transition-duration: 0.5s ;
+  background-color: var(--Blanco) ;
+  color: var(--VioletaClaro);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.img-container {
+  border-left: var(--Blanco) solid 0.7rem;
+  margin-left: 5%;
+}
+.inicio div #foto-chica {
+  border: var(--Blanco) solid 0.6rem; 
+  border-radius: 5rem;
+  height: 70%;
+  margin: 0 20% 0% 20%;
+}
+/*Aca empieza la barra lateral de marcas*/
+.aside-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0;
+  margin-left: 2rem;
+  }
+  .aside-logo {
+    position: fixed;
+    background-color: var(--Negro);
+  }
+  .inicio .aside-logo li:hover {
+  transform: scale(1.1);
+  }
+  #chatgpt {
+    position: relative;
+    top: 0.5rem;
+  }
+  #discord {
+    position: relative;
+    left: 0.5rem;
+    bottom: 0.4rem;
+  }
+  #twitter {
+    position: relative;
+    left: 0.2rem;
+  }
+  /*Este es el sector de los rombos, estan metidos en un div
+    y los movi con la posicion absolute para que esten en
+    el fondo como decoracion*/
+#rombo1 {
+  position: relative;
+  bottom:130rem;
+  right:35rem;
+}
+#rombo1 img {
+  position: absolute;
+}
+#rombo2 {
+  position: relative;
+  bottom:155rem;
+  left:128rem;
+}
+#rombo2 img {
+  position: absolute;
+}
+/*carousel*/
+/*Desde aca empieza el codigo del carrusel.
+ El @keyframe es para la animacion y el resto para los estilos*/
+@keyframes slide {
+  from {transform: translateX(0)}
+  to {transform: translateX(-100%);  }
+}
+.carousel-container {
+  white-space: nowrap;
+  background-color: var(--Blanco);
+  overflow: hidden;
+  padding: 3rem 3rem;
+}
+section .carousel{
+  display: inline-block;
+  margin: 4rem 0;
+  animation: 5s slide infinite linear;
+}
+section .carousel img{
+  height: 70px;
+  margin: 3rem;
+}
+/*Media Queries*/
+@media (min-width:576px) and (max-width) {
+  html {font-size: 25%;}
+}
+@media (max-width: 992px){}
+
+@media (max-width: 890px){
+  header {margin-bottom: 5rem;}
+  header .list-container .navbar { display: none;  display: block;  position: fixed;} 
+ header .list-container .navbar .list-element a {display: block;  width: 100%; 
+background-color: var(--VioletaMedio); color: var(--Blanco); margin: 2rem, 0, 2rem, 0;}
+  header .checkbox-btn {
+     display: block; margin-top: 1.3rem; margin-right: 5rem;}
+} 
+@media (min-width) and (max-width){}
+@media (min-width) and (max-width){}
