@@ -1,0 +1,56 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #070606cb;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #472B71;
+    color: #fff;
+    padding: 20px;
+    text-align:left;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Estilos para los botones de cursos */
+.curso-button {
+    background-color: #472B71;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    cursor:pointer ;
+    width: 340px;
+    text-align: right;
+    transition: background-color 0.5s;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la imagen dentro del botón */
+.curso-button img {
+    max-width: 20%;
+    border-radius: 5px 5px 0 0;
+    float: left;
+}
+
+.curso-button:hover {
+    background-color: #472B71;
+}
+
+#botones {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
