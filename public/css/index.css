@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
 :root{
-    /*Fonts*/
-    --Poppins: 'Poppins', sans-serif;
-    /*Palette*/
-    --Blanco: white;
-    --Negro: black;
-    --VioletaClaro:#5D60C0;
-    --VioletaMedio:#835CBF;
+  /*Fonts*/
+  --Poppins: 'Poppins', sans-serif;
+  /*Palette*/
+  --Blanco: white;
+  --Negro: black;
+  --VioletaClaro:#5D60C0;
+  --VioletaMedio:#835CBF;
 }
 *{
   margin: 0;
@@ -18,10 +18,13 @@
   text-decoration: none;
   list-style: none;
 }
+/*Esta es la aplicacion de los valores de la totalidad del html
+la consola dice que el "Font-Size:40%" no esta siendo aplicado.
+No le hagan caso a eso, porque si esta siendo aplicado.*/
 html {
-   font-size: 40%;
-   scroll-behavior: smooth;
-   overflow-x: hidden;
+  font-size: 40%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   background-color: var(--Negro);
@@ -43,14 +46,14 @@ header .logo {
 }
 header .navbar {
   position: fixed;
-    top: 0; left: 1rem; right: 0; 
-    padding: 2% 9% 5% 20%;
-    display: flex;
-    font-weight: bold;
-    font-size: 3rem;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
+  top: 0; left: 1rem; right: 0; 
+  padding: 2% 9% 5% 20%;
+  display: flex;
+  font-weight: bold;
+  font-size: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
 }
 header .list-container .navbar .list-element:hover {
   transform: scale(1.1);
@@ -68,7 +71,7 @@ header .list-container .navbar .list-element .btn:hover{
   color: var(--Negro);
 }
 /*Aca empieza lo que seria el codigo del toggle
- para el navbar responsive.*/
+para el navbar responsive.*/
 header .checkbox-btn {
   font-size: 5.8rem;
   float: right;
@@ -83,7 +86,6 @@ header #checkbox-check {
 }
 section {
   display: flex;
-  flex: 1 1 50;
   margin: 2rem 0;
   padding-left: 5%;
   padding-top: 10%;
@@ -91,7 +93,7 @@ section {
 .content {
   margin-right: 3%;
 }
- section h2 {
+  section h2 {
   font-size: 4.9rem;
 }
 section h1 {
@@ -115,15 +117,15 @@ section .content .btn-container .btn {
 }
 section .content #cursos {
   font-weight: bold;
-color: var(--Blanco);
-background-color: var(--VioletaClaro);
-padding: 2rem 5rem 2rem 5rem;
+  color: var(--Blanco);
+  background-color: var(--VioletaClaro);
+  padding: 2rem 5rem 2rem 5rem;
 }
 section .content #estudio {
   font-weight: bold;
-color: var(--VioletaClaro);
-background-color: var(--Negro);
-padding: 2rem 5rem 2rem 5rem;
+  color: var(--VioletaClaro);
+  background-color: var(--Negro);
+  padding: 2rem 5rem 2rem 5rem;
 }
 section .btn-container #estudio:hover {
   transition-duration: 0.5s ;
@@ -178,8 +180,8 @@ section .btn-container #cursos:hover {
     left: 0.2rem;
   }
   /*Este es el sector de los rombos, estan metidos en un div
-    y los movi con la posicion absolute para que esten en
-    el fondo como decoracion*/
+  y los movi con la posicion absolute para que esten en
+  el fondo como decoracion*/
 #rombo1 {
   position: relative;
   bottom:130rem;
@@ -198,7 +200,7 @@ section .btn-container #cursos:hover {
 }
 /*carousel*/
 /*Desde aca empieza el codigo del carrusel.
- El @keyframe es para la animacion y el resto para los estilos*/
+El @keyframe es para la animacion y el resto para los estilos*/
 @keyframes slide {
   from {transform: translateX(0)}
   to {transform: translateX(-100%);  }
@@ -212,14 +214,14 @@ section .btn-container #cursos:hover {
 section .carousel{
   display: inline-block;
   margin: 4rem 0;
-  animation: 5s slide infinite linear;
+  animation: 7s slide infinite linear;
 }
 section .carousel img{
   height: 70px;
   margin: 3rem;
 }
 /*Media Queries*/
-@media (min-width:576px) and (max-width) {
+/* @media (min-width:576px) and (max-width) {
   html {font-size: 25%;}
 }
 @media (max-width: 992px){}
@@ -227,10 +229,11 @@ section .carousel img{
 @media (max-width: 890px){
   header {margin-bottom: 5rem;}
   header .list-container .navbar { display: none;  display: block;  position: fixed;} 
- header .list-container .navbar .list-element a {display: block;  width: 100%; 
+  header .list-container .navbar .list-element a {display: block;  width: 100%; 
 background-color: var(--VioletaMedio); color: var(--Blanco); margin: 2rem, 0, 2rem, 0;}
   header .checkbox-btn {
-     display: block; margin-top: 1.3rem; margin-right: 5rem;}
+  display: block; margin-top: 1.3rem; margin-right: 5rem;}
 } 
 @media (min-width) and (max-width){}
 @media (min-width) and (max-width){}
+ */
