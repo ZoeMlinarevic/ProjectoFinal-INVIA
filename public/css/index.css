@@ -227,7 +227,7 @@ section .carousel img{
 @media (max-width: 992px){}
 
 @media (max-width: 890px){
-  header {margin-bottom: 5rem;}
+}
   header .list-container .navbar { display: none;  display: block;  position: fixed;} 
   header .list-container .navbar .list-element a {display: block;  width: 100%; 
 background-color: var(--VioletaMedio); color: var(--Blanco); margin: 2rem, 0, 2rem, 0;}
