@@ -160,15 +160,15 @@ section .btn-container #cursos:hover {
   margin-left: 2rem;
   }
   .aside-logo {
-    position: fixed;
-    background-color: var(--Negro);
+  position: fixed;
+  background-color: var(--Negro);
   }
   .inicio .aside-logo li:hover {
   transform: scale(1.1);
   }
   #chatgpt {
-    position: relative;
-    top: 0.5rem;
+  position: relative;
+  top: 0.5rem;
   }
   #discord {
     position: relative;
