@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres utilizado en la página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la escala inicial para dispositivos móviles -->
+    <title>Invia - Plataforma Educativa</title> <!-- Título de la página que aparecerá en la pestaña del navegador -->
+    <link rel="stylesheet" href="contenido.css"> <!-- Enlace al archivo CSS para aplicar estilos a la página -->
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <div class="encabezado">
+        <!-- Logo de Invia -->
+        <div class="logo">
+            <img src="logo_invia.png" alt="Logo de Invia"> <!-- Inserta una imagen como logo y proporciona texto alternativo en caso de que la imagen no se cargue -->
+        </div>
+        <!-- Barra de búsqueda -->
+        <div class="buscador">
+            <input type="text" placeholder="Buscar..."> <!-- Campo de entrada para la búsqueda con un marcador de posición -->
+            <button>Buscar</button> <!-- Botón para iniciar la búsqueda -->
+        </div>
+    </div>
+
+    <!-- Contenedor principal de la página -->
+    <div class="contenedor-principal">
+        <!-- Sección de video -->
+        <div class="video">
+            <!-- Video incrustado desde YouTube -->
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/TU_ID_DE_VIDEO" frameborder="0" allowfullscreen></iframe>
+            <!-- El atributo "allowfullscreen" permite que el video se vea en pantalla completa -->
+        </div>
+
+        <!-- Sección de módulos educativos -->
+        <div class="modulos">
+            <!-- Módulo 1 -->
+            <div class="modulo">
+                <h2>Módulo 1: Tema Introductorio</h2> <!-- Encabezado del módulo -->
+                <ul>
+                    <!-- Lista de recursos del módulo 1 -->
+                    <li><a href="https://www.youtube.com/embed/TU_ID_DE_VIDEO" class="modal-link">Video del Módulo</a></li> <!-- Enlace al video del módulo con una clase para funciones modales -->
+                    <li><a href="archivo.pdf" target="_blank">PDF del Módulo</a></li> <!-- Enlace al PDF del módulo que se abrirá en una nueva pestaña del navegador -->
+                    <li><a href="examen.html">Examen del Módulo</a></li> <!-- Enlace al examen del módulo -->
+                </ul>
+            </div>
+
+            <!-- Módulo 2 -->
+            <div class="modulo">
+                <h2>Módulo 2: Tema Avanzado</h2> <!-- Encabezado del módulo -->
+                <ul>
+                    <!-- Lista de recursos del módulo 2 -->
+                    <li><a href="https://www.youtube.com/embed/TU_ID_DE_VIDEO" class="modal-link">Video del Módulo</a></li> <!-- Enlace al video del módulo con una clase para funciones modales -->
+                    <li><a href="archivo.pdf" target="_blank">PDF del Módulo</a></li> <!-- Enlace al PDF del módulo que se abrirá en una nueva pestaña del navegador -->
+                    <li><a href="examen.html">Examen del Módulo</a></li> <!-- Enlace al examen del módulo -->
+                </ul>
+            </div>
+
+            <!-- Módulo 3 -->
+            <div class="modulo">
+                <h2>Módulo 3: Tema Específico</h2> <!-- Encabezado del módulo -->
+                <ul>
+                    <!-- Lista de recursos del módulo 3 -->
+                    <li><a href="https://www.youtube.com/embed/TU_ID_DE_VIDEO" class="modal-link">Video del Módulo</a></li> <!-- Enlace al video del módulo con una clase para funciones modales -->
+                    <li><a href="archivo.pdf" target="_blank">PDF del Módulo</a></li> <!-- Enlace al PDF del módulo que se abrirá en una nueva pestaña del navegador -->
+                    <li><a href="examen.html">Examen del Módulo</a></li> <!-- Enlace al examen del módulo -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para reproducir videos -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Botón para cerrar el modal (icono de cruz) -->
+            <!-- Contenedor para el video del modal -->
+            <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <!-- El atributo "allowfullscreen" permite que el video se vea en pantalla completa -->
+        </div>
+    </div>
+
+    <!-- Script JavaScript para funcionalidades interactivas -->
+    <script src="script.js"></script>
+</body>
+</html>
+
