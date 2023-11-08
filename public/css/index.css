@@ -129,7 +129,7 @@ header .list-container .navbar .list-element .btn:hover{
   color: var(--Negro);
 }
 
-section {
+.inicio {
   display: flex;
   flex: 1 1 50;
   margin: 2rem 0;
@@ -191,6 +191,7 @@ section {
 .horizontal-line{
   height: 55rem;
   margin: 10rem 5rem 0 20rem;
+  border: 0.5rem solid;
 }
 .img-container {
   margin: 3rem 15rem 0 5rem;
