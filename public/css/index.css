@@ -129,72 +129,80 @@ header .list-container .navbar .list-element .btn:hover{
   color: var(--Negro);
 }
 
-section {
+.inicio {
   display: flex;
+  flex: 1 1 50;
   margin: 2rem 0;
   padding-left: 5%;
-  padding-top: 10%;
+  padding-top: 11%;
+  height: 125rem;
 }
 .content {
   margin-right: 3%;
 }
-  section h2 {
+.inicio h2 {
   font-size: 4.9rem;
 }
-section h1 {
+.inicio h1 {
   color: var(--VioletaClaro);
   font-size: 10.5rem;
 } 
-section p {
+.inicio .parrafo-INVIA {
   font-size: 3.4rem;
 }
-section  .btn-container {
+.inicio  .btn-container {
   display: flex;
   flex: 1 1 30;
   justify-content: space-between;
   margin-top: 5rem;
   padding: 0 1rem 0 1rem;
 }
-section .content .btn-container .btn {
+.inicio .content .btn-container .btn {
   font-size: 2.9rem;
   border: var(--Blanco) solid 0.2rem;
   border-radius: 0.4rem; 
 }
-section .content #cursos {
+.inicio .content #cursos {
   font-weight: bold;
   color: var(--Blanco);
   background-color: var(--VioletaClaro);
   padding: 2rem 5rem 2rem 5rem;
 }
-section .content #estudio {
+.inicio .content #estudio {
   font-weight: bold;
   color: var(--VioletaClaro);
   background-color: var(--Negro);
   padding: 2rem 5rem 2rem 5rem;
 }
-section .btn-container #estudio:hover {
+.inicio .btn-container #estudio:hover {
   transition-duration: 0.5s ;
   background-color: var(--Blanco);
   color: var(--VioletaClaro);
   transform: scale(1.1);
   cursor: pointer;
 }
-section .btn-container #cursos:hover {
+.inicio .btn-container #cursos:hover {
   transition-duration: 0.5s ;
   background-color: var(--Blanco) ;
   color: var(--VioletaClaro);
   transform: scale(1.1);
   cursor: pointer;
 }
+.horizontal-line{
+  height: 55rem;
+  margin: 10rem 5rem 0 20rem;
+  border: 0.5rem solid;
+}
 .img-container {
-  border-left: var(--Blanco) solid 0.7rem;
-  margin-left: 5%;
+  margin: 3rem 15rem 0 5rem;
+  height: 125rem;
+  width: 70rem;
 }
 .inicio div #foto-chica {
   border: var(--Blanco) solid 0.6rem; 
   border-radius: 5rem;
-  height: 70%;
-  margin: 0 20% 0% 20%;
+  height: 55%;
+  margin: 0 0% 0% 10%;
 }
 /*Aca empieza la barra lateral de marcas*/
 .aside-logo-container {
@@ -202,7 +210,6 @@ section .btn-container #cursos:hover {
   flex-direction: column;
   align-items: flex-end;
   padding: 0;
-  margin-left: 2rem;
   }
   .aside-logo {
   position: fixed;
@@ -241,11 +248,12 @@ El @keyframe es para la animacion y el resto para los estilos*/
   background-color: var(--Blanco);
   overflow: hidden;
   padding: 3rem 3rem;
+  height: 30rem;
 }
 section .carousel{
   display: inline-block;
   margin: 4rem 0;
-  animation: 7s slide infinite linear;
+  animation: 5s slide infinite linear;
 }
 section .carousel img{
   height: 70px;
