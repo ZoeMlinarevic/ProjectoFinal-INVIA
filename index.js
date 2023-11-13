@@ -13,7 +13,7 @@ app.get('/', (req, res) =>  {
 });
 
 app.get('/cursos', (req, res) =>  {
-    res.sendFile(process.cwd() + '/public/pages/curso.html');
+    res.sendFile(process.cwd() + '/public/pages/cursos.html');
 });
 
 // MIDDLEWARES
