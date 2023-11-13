@@ -6,46 +6,118 @@
     <meta name="description" content="Explora INVIA, tu plataforma educativa gratuita. Accede a cursos sin costo y mantente al día con las nuevas tendencias en tecnología, negocios y más. Descubre, aprende y crece con expertos en sus campos. ¡Únete a nuestra comunidad educativa hoy! 🎓✨">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/toggle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
-    <ul class="list-container">
-        <li class="list-element"><a href="/" class="logo">INVIA</a></li>
-        <nav class="navbar">
-            <li class="list-element"><a href="#quienesSomos">Quienes Somos</a></li>
-            <li class="list-element"><a href="#servicios">Servicios</a></li>
-            <li class="list-element"><a href="proposito">Proposito</a></li>
-            <li class="list-element"><a href="pages/login.html" class="btn">Login</a></li>
+    <nav class="list-container">
+        <h1 class="list-element"><a href="#inicio" class="logo">INVIA</a></h1>
+        <ul class="navbar">
+            <li class="list-element"><a href="#quienesSomos">Explorar</a>
+                <ul class="burger-list-explorar">
+                    <li><a href="">Curso 1</a></li>
+                    <li><a href="">Curso 2</a></li>
+                    <li><a href="">Curso 3</a></li>
+                    <li><a href="">Curso 4</a></li>
+                    <li><a href="">Curso 5</a></li>
+                </ul>
+                </li>
+                <li class="list-element"><a href="#servicios">Comunidad</a>
+                    <ul class="burger-list-comunidad">
+                    <li><a href="">Sobre Nosotros</a></li>
+                    <li><a href="">INVIA</a></li>
+                    <li><a href="">Colabora</a></li>
+                    </ul>
+                </li>
+                <li class="list-element"><a href="proposito">Recursos</a></li>
+                <li class="list-element"><a href="#login" class="btn">Crear Cuenta</a></li>
+                <li class="list-element"><a href="#login" class="btn">Login</a></li>
+            </ul>
         </nav>
-    </ul>
-        <input type="checkbox" id="checkbox-check">
-        <label for="check" class="checkbox-btn">
-            <i class="fas fa-bars"></i>
-        </label>
     </header>
     <section class="inicio" id="inicio">
     <div class="content">
         <h2> PLATAFORMA</h2>
         <h1>EDUCATIVA</h1>
-        <p>para la<br>
+        <p class="parrafo-INVIA">para la<br>
             Inclusión y Vías de Acceso para el Aprendizaje</p>
             <div class="btn-container">
-        <button class="btn" id="cursos" > <a href="/cursos">Nuestros Cursos</a></button>
-        <button class="btn" id="estudio">Guias de Estudio</button>
+                <a href="google.com"><button class="btn" id="cursos">Nuestros Cursos</button></a>
+                <a href="google.com" rel="noopener" target="_blank"><button class="btn" id="estudio">Guias de Estudio</button></a>
     </div>
+    </div>
+    <div class="horizontal-line-container">
+        <hr class="horizontal-line">
     </div>
     <div class="img-container">
         <img id="foto-chica" src="assets/img/foto.jpg">
     </div>
     <section class="aside-logo-container">
         <div class="aside-logo">
-            <ul>
-            <li id="chatgpt"><a href="https://chat.openai.com/" target="_blank"><img src="/public/assets/img/botones-logo/chatgpt.png"></a></li>
-            <li id="mercado-pago"><a href="https://www.mercadopago.com.ar/" target="_blank"><img src="/public/assets/img/botones-logo/mercado-pago.png"></a></li>
-            <li id="discord"><a href="https://discord.com/" target="_blank"><img src="/public/assets/img/botones-logo/discord.png"></a></li>
-            <li id="twitter"><a href="https://twitter.com/" target="_blank"><img src="/public/assets/img/botones-logo/twitter.png"></a></li>
-            </ul>
+            <div class="container">
+                <aside class="sidebar">
+                    <label class="switch" id="toggle">
+                    <input type="checkbox" id="switch" onclick="myFunction()">
+                    <span class="slider">
+                        <div class="actuator">
+                        <div class="actuator-background">
+                            <div class="moon">
+                            <div class="crater moon-crater-1">
+                            </div>
+                            <div class="crater moon-crater-2">
+                            </div>
+                            <div class="crater moon-crater-3">
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="actuator-shadow actuator-shadow-1">
+                        </div>
+                        <div class="actuator-shadow actuator-shadow-2">
+                        </div>
+                        <div class="actuator-shadow actuator-shadow-3">
+                        </div>
+                        <div class="slider-background">
+                        <div class="day">
+                            <div class="clouds">
+                            <div class="cloud cloud-1">
+                            </div>
+                            <div class="cloud cloud-2">
+                            </div>
+                            <div class="cloud cloud-3">
+                            </div>
+                        </div>
+                        <div class="dimmed-clouds">
+                            <div class="cloud dimmed cloud-1">
+                            </div>
+                            <div class="cloud dimmed cloud-2">
+                            </div>
+                            <div class="cloud dimmed cloud-3">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="night">
+                        <div class="stars">
+                            <div class="star star-1">
+                            </div>
+                            <div class="star star-2">
+                            </div>
+                            <div class="star star-3">
+                            </div>
+                            <div class="star star-4">
+                            </div>
+                            <div class="star star-5">
+                            </div>
+                            <div class="star star-6">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </span>
+                </label>
+                </aside>
+                </div>
         </div> 
         </section>
     </section> <!--
@@ -69,5 +141,6 @@
     <img src="assets/img/icons/UBA.png">
         </div>
 </section>
+<script src="scripts/boton.js"></script>
 </body>
 </html>
