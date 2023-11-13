@@ -10,9 +10,31 @@
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Andres Felipe Clavijo Rojas",
+    "email": "andresclavijo0822@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Braian Andres Gómez",
+      "email": "braiangomez371@gmail.com"
+    },
+    {
+      "name": "Rocío Selena Caballero Alves",
+      "email": "caballeroalvesrocioselena@gmail.com"
+    },
+    {
+      "name": "Zoe Mlinarevic",
+      "email": "Zoemmedl@gmail.com"
+    },
+    {
+      "name": "Diego",
+      "email": "diego_up47@hotmail.com"
+    }
+  ],
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2"
   },
   "devDependencies": {
