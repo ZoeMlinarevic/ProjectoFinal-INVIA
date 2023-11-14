@@ -1,5 +1,4 @@
-const cursos = async (req, res) => {
-    console.log(await getProductos());
+const cursos = (req, res) => {
     res.sendFile(process.cwd() + '/public/pages/cursos.html');
 };
 
