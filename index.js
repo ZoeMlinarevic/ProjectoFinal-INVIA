@@ -1,24 +1,21 @@
-import dotenv from 'dotenv';
-dotenv.config();
+require("dotenv").config();
 
-import express from 'express';
-import notFound404 from "./src/middlewares/notFound.js";
-
+const express = require("express");
 const app = express();
 
 app.use(express.static('public/'));
 
-app.get('/', (req, res) =>  {
-    res.sendFile(process.cwd() + '/public/index.html');
-});
+// ROUTES
 
-app.get('/cursos', (req, res) =>  {
-    res.sendFile(process.cwd() + '/public/pages/cursos.html');
-});
+const mainRouter = require("./src/routes/mainRouter.js");
+app.use("/", mainRouter);
+
+const cursosRouter = require("./src/routes/cursosRouter.js");
+app.use("/cursos", cursosRouter);
 
 // MIDDLEWARES
 
-app.use(notFound404);
+app.use(require("./src/middlewares/notFound.js"));
 
 // PORT
 

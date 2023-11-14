@@ -4,6 +4,7 @@
 
 node_modules/
 .vscode/
+.vercel/
 
 # Files
 
@@ -13,4 +14,4 @@ node_modules/
 .txt
 .exe
 .hintrc
-.vercel
+
