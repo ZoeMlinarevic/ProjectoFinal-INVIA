@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
-app.use(express.static('public/'));
+app.use(express.static('./public/'));
 
 // ROUTES
 
@@ -12,6 +12,9 @@ app.use("/", mainRouter);
 
 const cursosRouter = require("./src/routes/cursosRouter.js");
 app.use("/cursos", cursosRouter);
+
+const crearCuentaEstudianteRouter = require("./src/routes/crearCuentaEstudianteRouter.js");
+app.use("/crear-cuenta-estudiante", crearCuentaEstudianteRouter);
 
 // MIDDLEWARES
 

@@ -1,5 +1,4 @@
-const index = async (req, res) => {
-    console.log(await getProductos());
+const index = (req, res) => {
     res.sendFile(process.cwd() + '/public/index.html');
 };
 
