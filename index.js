@@ -13,6 +13,15 @@ app.use("/", mainRouter);
 const cursosRouter = require("./src/routes/cursosRouter.js");
 app.use("/cursos", cursosRouter);
 
+const crearCuentaEstudianteRouter = require("./src/routes/crearCuentaEstudianteRouter.js");
+app.use("/crear-cuenta-estudiante", crearCuentaEstudianteRouter);
+
+// EXTERNAL ROUTES
+// ROUTES MERCADO PAGO
+
+const createOrderRouter = require("./src/routes/paymentsRouter.js");
+app.use("/createOrder", createOrderRouter);
+
 // MIDDLEWARES
 
 app.use(require("./src/middlewares/notFound.js"));
