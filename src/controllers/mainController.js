@@ -1,7 +1,5 @@
 const index = (req, res) => {
-    res.sendFile(process.cwd() + '/public/index.html');
+    res.sendFile(new URL('../public/index.html', import.meta.url).pathname);
 };
 
-module.exports = {
-    index: index
-}
+export default { index };

@@ -1,6 +1,13 @@
-const path = require("path");
+import path from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const notFound404 = (req, res, next) => {
-    res.status(404).sendFile(path.join(__dirname + "/../../public/pages/404.html"));}
+    const filePath = path.join(__dirname, "/../../public/pages/404.html");
+    res.status(404).sendFile(filePath);
+}
 
-module.exports = notFound404;
+export default notFound404;
