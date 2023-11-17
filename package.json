@@ -1,8 +1,8 @@
 {
-  "type": "commonjs",
+  "type": "module",
   "name": "projectofinal-invia",
   "version": "1.0.0",
-  "description": "",
+  "description": "Explora INVIA, tu plataforma educativa gratuita. Accede a cursos sin costo y mantente al día con las nuevas tendencias en tecnología, negocios y más. Descubre, aprende y crece con expertos en sus campos. ¡Únete a nuestra comunidad educativa hoy! 🎓✨",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

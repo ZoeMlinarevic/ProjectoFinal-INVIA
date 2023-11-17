@@ -14,8 +14,8 @@
     >- MercadoPago
     
 
-## FRONT EDN
+## FRONT END
 
 - HTML 
-- Css
+- CSS
 - JavaScript

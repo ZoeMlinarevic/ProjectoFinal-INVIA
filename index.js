@@ -1,43 +1,40 @@
-require("dotenv").config();
+import dotenv from "dotenv";
+dotenv.config();
 
-const express = require("express");
-const morgan = require("morgan");
+import express from "express";
+import morgan from "morgan";
+import mainRouter from "./src/routes/mainRouter.js";
+import cursosRouter from "./src/routes/cursosRouter.js";
+import crearCuentaEstudianteRouter from "./src/routes/crearCuentaEstudianteRouter.js";
+
+// MERCADO PAGO
+// import createOrderRouter from "./src/routes/payments/mercadoPago/createOrderRouter.js";
+// import successRouter from "./src/routes/payments/mercadoPago/successRouter.js";
+// import webhookRouter from "./src/routes/payments/mercadoPago/webhookRouter.js";
+
+// MIDDLEWARE
+import notFoundMiddleware from "./src/middlewares/notFound.js";
+
 const app = express();
 
 app.use(morgan("dev"));
 app.use(express.static('public'));
 
-// ROUTES
-
-const mainRouter = require("./src/routes/mainRouter.js");
+// RUTAS
 app.use("/", mainRouter);
-
-const cursosRouter = require("./src/routes/cursosRouter.js");
 app.use("/cursos", cursosRouter);
-
-const crearCuentaEstudianteRouter = require("./src/routes/crearCuentaEstudianteRouter.js");
 app.use("/crear-cuenta-estudiante", crearCuentaEstudianteRouter);
 
-// EXTERNAL ROUTES
-// ROUTES MERCADO PAGO
+// RUTAS DE PAYMENTS
+// MERCADO PAGO
+// app.use("/createOrder", createOrderRouter);
+// app.use("/success", successRouter);
+// app.use("/webhook", webhookRouter);
 
-const createOrderRouter = require("./src/routes/payments/mercadoPago/createOrderRouter.js");
-app.use("/createOrder", createOrderRouter);
+// MIDDLEWARE de NOTFOUND
+app.use(notFoundMiddleware);
 
-const successRouter = require("./src/routes/payments/mercadoPago/successRouter.js"); // no esta listo 
-app.use("/success", successRouter);
-
-const webhookRouter = require("./src/routes/payments/mercadoPago/webhookRouter.js"); // no esta listo
-app.use("/webhook", webhookRouter);
-
-// ROUTES BINANCE
-
-// MIDDLEWARES
-
-app.use(require("./src/middlewares/notFound.js"));
-
-// PORT
-
+// Configurar puerto
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`server listening at http://localhost:${PORT}`);

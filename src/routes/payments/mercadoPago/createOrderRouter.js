@@ -1,7 +1,8 @@
-const express = require("express");
-const router = express.Router();
+import { Router } from "express";
+import { createOrder } from "../../../controllers/payments/mercadoPago/createOrderController.js";
 
-const createOrderController = require("../../../controllers/payments/mercadoPago/createOrderController.js");
-router.get("/", createOrderController.createOrder)
+const router = Router();
 
-module.exports = router;
+router.get("/", createOrder)
+
+export default router;
