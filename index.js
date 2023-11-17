@@ -3,6 +3,7 @@ dotenv.config();
 
 import express from "express";
 import morgan from "morgan";
+import path from "path";
 import mainRouter from "./src/routes/mainRouter.js";
 import cursosRouter from "./src/routes/cursosRouter.js";
 import crearCuentaEstudianteRouter from "./src/routes/crearCuentaEstudianteRouter.js";
@@ -18,10 +19,16 @@ import notFoundMiddleware from "./src/middlewares/notFound.js";
 const app = express();
 
 app.use(morgan("dev"));
-app.use(express.static('public'));
+
+const __filename = new URL(import.meta.url).pathname;
+const __dirname = path.dirname(__filename);
+const publicPath = path.join(__dirname, 'public');
+app.use(express.static(publicPath));
+console.log(publicPath);
+//app.use(express.static(publicPath));
 
 // RUTAS
-app.use("/", mainRouter);
+app.use("./", mainRouter);
 app.use("/cursos", cursosRouter);
 app.use("/crear-cuenta-estudiante", crearCuentaEstudianteRouter);
 
