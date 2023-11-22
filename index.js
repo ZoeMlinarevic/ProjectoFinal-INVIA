@@ -23,9 +23,7 @@ app.use(morgan("dev"));
 const __filename = new URL(import.meta.url).pathname;
 const __dirname = path.dirname(__filename);
 const publicPath = path.join(__dirname, 'public');
-app.use(express.static(publicPath));
-console.log(publicPath);
-//app.use(express.static(publicPath));
+app.use(express.static(publicPath && "public"));
 
 // RUTAS
 app.use("./", mainRouter);
