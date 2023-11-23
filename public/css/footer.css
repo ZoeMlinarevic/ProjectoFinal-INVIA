@@ -67,8 +67,8 @@
 }
 
 .footer-nav li,
-label,
-label span {
+.footer-nav label,
+.footer-nav label span {
     font-size: 2rem;
     color: black;
 }
