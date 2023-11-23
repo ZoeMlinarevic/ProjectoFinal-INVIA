@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explora INVIA, tu plataforma educativa gratuita. Accede a cursos sin costo y mantente al día con las nuevas tendencias en tecnología, negocios y más. Descubre, aprende y crece con expertos en sus campos. ¡Únete a nuestra comunidad educativa hoy! 🎓✨">
+    <meta http-equiv="Cache-Control" content="private, max-age=86400, stale-while-revalidate=604800">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/toggle.css">
@@ -185,10 +186,10 @@
             </div>
             <div>
                 <h3>Newsletter</h3>
-                <form action="" method="post">
+                <form action="" method="get" id="nesletterform">
                     <div class="footer-form-div">
                         <input type="email" name="newsletter" id="newsletter" placeholder="Correo Electronico">
-                        <button type="submit" name="newsletter">Enviar</button>
+                        <button type="submit" name="submitNewsletter" id="nesletterbutton">Enviar</button>
                     </div>
                     <label for="newsletter">Suscríbete al boletín y obtén beneficios <span>exclusivos. Conoce nuevos cursos, oportunidades</span><span>y novedades. Aprende con una comunidad</span> apasionada.</label>
                 </form>
