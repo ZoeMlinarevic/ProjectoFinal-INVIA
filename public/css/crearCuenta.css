@@ -8,10 +8,11 @@
 .crearCuentaEstudiante-container-header {
     display: flex;
     flex-direction: column;
-    gap: .5rem; 
+    gap: .5rem;
     padding: 4rem 0 2rem 6rem;
     position: relative;
     background-color: inherit;
+    z-index: 2;
 }
 
 .crearCuentaEstudiante-h1-title {
@@ -37,6 +38,8 @@
 .crearCuentaEstudiante-container-section-redes {
     padding: 8rem 0;
     padding-left: 6rem;
+    position: relative;
+    z-index: 2;
 }
 
 .crearCuentaEstudiante-container-div-redes {
@@ -68,40 +71,39 @@
     grid-template-columns: 44% 56%;
     grid-template-rows: 15% 60% 25%;
     padding-left: 6rem;
-    grid-template-areas: 
-    "aIzquierda aDerecha"
-    "cIzquierda cDerecha"
-    "bIzquierda bDerecha";
 }
 
 .crearCuentaEstudiante-main-div {
     display: flex;
     gap: 2rem;
     flex-direction: column;
+    z-index: 2;
 }
 
 
 /* Formulario */
 
 .crearCuentaEstudiante-container-form {
-    grid-area: cDerecha;
     display: grid;
-    grid-template-columns: 12.5rem 12.5rem;;
+    grid-template-columns: 30rem 30rem;
     align-items: center;
     row-gap: 1rem;
-    column-gap: 4rem;
+    column-gap: 1rem;
 }
 
 .crearCuentaEstudiante-container-form label {
     display: block;
+    color: var(--Negro);
+    font-size: 2rem;
+    padding-bottom: 2rem;
 }
 
-.crearCuentaEstudiante-container-formform div input {
-    width: 15.5rem;
+.crearCuentaEstudiante-container-form div input {
+    width: 100%;
     background-color: #E1E1E1;
     border: none;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .crearCuentaEstudiante-container-form .terminosycondiciones {
@@ -110,29 +112,22 @@
     grid-area: initial;
     grid-column: span 2;
     gap: 2rem;
+    padding: 4rem 0;
 }
 
-.terminosycondiciones input {
-    width: 1rem;
-    height: 1rem;
+.terminosycondiciones #checkbox {
+    width: 3rem;
+    height: 3rem;
     background-color: #E1E1E1;
 }
 
-.crearCuentaEstudiante-parrafo-checkbox {
-    font-size: 0.8rem;
+.crearCuentaEstudiante-parrafo-checkbox,
+.crearCuentaEstudiante-parrafo-checkbox span {
+    font-size: 2rem;
+    color: var(--Negro);
 }
 
-/* section */
-
-.crearCuentaEstudiante-container-main section {
-    grid-area: bDerecha;
-}
-
-.crearCuentaEstudiante-container-main section label {
-    display: inline;
-    font-size: .7rem;
-    font-weight: 400;
-}
+/* Form Div */
 
 .crearCuentaEstudiante-container-main section label span {
     display: block;
@@ -140,33 +135,29 @@
 
 /* Button */
 
-.container-arrow {
+.crearCuentaEstudiante-container-arrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background-color: #5D60C0;
     border: none;
     border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
+    width: 8rem;
+    height: 8rem;
     cursor: pointer;
 }
 
 .fa-solid {
     color: #ffffff;
-    font-size: 1.5rem;
-}
-
-.crearCuentaEstudiante-container-main section h3 {
-    font-size: .9rem;
-}
-
-.crearCuentaEstudiante-container-main section h3 span {
-    color: #5D60C0; 
+    font-size: 4.5rem;
 }
 
 .crearCuentaEstudiante-container-main .crearCuentaEstudiante-container-linea {
     gap: 4rem;
 }
 
-.crearCuentaEstudiante-linea div a {
+.crearCuentaEstudiante-linea-a {
     font-size: 3rem;
     color: var(--Negro);
     text-decoration: none;
@@ -174,38 +165,46 @@
     transition: .5s;
 }
 
-.crearCuentaEstudiante-linea a:hover {
+.crearCuentaEstudiante-linea-a:hover {
     color: #5D60C0;
 }
 
-.container-div-ejemplo-borrar {
+/* IMG CASA */
+
+.container-div-img-casa {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container-div-ejemplo-borrar h2 {
+.container-div-img-casa h2 {
     font-size: 6rem;
     font-weight: 700;
-    top: 2rem;
+    top: 4rem;
     color: var(--Negro);
     position: absolute;
     text-align: center;
     border-bottom: 4px solid;
     padding-bottom: .5rem;
-    width: 16rem;
+    width: 50rem;
+    z-index: 2;
 }
 
-.container-div-ejemplo-borrar #casas-login {
+.container-div-img-casa #casas-login {
     position: absolute;
-    width: 52rem;
+    width: 130rem;
     bottom: 0rem;
     right: 0;
+}
+
+.container-div-img-casa #casas-login img {
+    width: 100%;
 }
 
 /* Responsive */
 
 @media screen and (min-width: 1500px) {
+
     .crearCuentaEstudiante-container-header,
     .crearCuentaEstudiante-container-section-redes,
     .crearCuentaEstudiante-container-main {
@@ -221,7 +220,59 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
+    .crearCuentaEstudiante-body-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .crearCuentaEstudiante-container-header {
+        background-color: #F7F7F7;
+        padding: 0;
+    }
+
+    .crearCuentaEstudiante-h1-title {
+        font-size: 6rem;
+    }
+
+    .crearCuentaEstudiante-container-section-redes {
+        padding: 2rem 0;
+    }
+
+    /* MAIN */
+
+    .crearCuentaEstudiante-container-main {
+        padding: 0 1rem;
+    }
+    
+    .crearCuentaEstudiante-main-div {
+        gap: 0;
+    }
+
+    /* FORM */
+
+    .crearCuentaEstudiante-container-form div input {
+        width: 85%; 
+    }
+
+    /* IMG CASA */
+
+    .container-div-img-casa {
+        position: absolute;
+        bottom: 12rem;
+        right: 27rem;
+    }
+
+    .container-div-img-casa h2 {
+        border: none;
+        font-size: 3rem;
+        right: 28%;
+        position: fixed;
+        z-index: 0;
+    }
+
     #casas-login img {
         display: none;
     }
