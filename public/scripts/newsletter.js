@@ -6,11 +6,12 @@ export function validarFormularioNewsletter() {
         e.preventDefault();
 
         const email = document.querySelector('#newsletter').value;
+        const emailExpRegular = /^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim;
+        const emailValidado = emailExpRegular.test(email);
 
-        if (email == "") {
-            console.log('coloque email');
+        if (!emailValidado) {
+            console.log(`correo invalido ${email}`);
         } else {
-            console.log(`${email} click`);
             nesletterform.submit();
         }
     });

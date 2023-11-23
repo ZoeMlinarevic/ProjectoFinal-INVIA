@@ -39,13 +39,18 @@ export function crearCuenta() {
     });
 }
 
-// cambiar cuando completes el popUpCrearCuenta
-
 export function exitPopUp() {
     const popUpsSection = document.querySelector(".popUpCrearCuenta");
 
-    popUpsSection.addEventListener("click", (e) => {
-        e.preventDefault();
-        popUpsSection.remove();
-    });
+    if (popUpsSection) {
+        popUpsSection.addEventListener("click", (e) => {
+            const clickedElement = e.target;
+            console.log(clickedElement);
+
+            if (!clickedElement.closest(".popUpCrearCuenta-container-grilla")) {
+                e.preventDefault();
+                popUpsSection.remove();
+            }
+        });
+    }
 }
