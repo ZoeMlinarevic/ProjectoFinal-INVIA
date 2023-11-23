@@ -27,8 +27,8 @@ app.use(express.static(publicPath && "public"));
 
 // RUTAS
 app.use("./", mainRouter);
-app.use("/cursos", cursosRouter);
-app.use("/crear-cuenta-estudiante", crearCuentaEstudianteRouter);
+app.use("/Cursos", cursosRouter);
+app.use("/Crear-Cuenta-Estudiante", crearCuentaEstudianteRouter);
 
 // RUTAS DE PAYMENTS
 // MERCADO PAGO

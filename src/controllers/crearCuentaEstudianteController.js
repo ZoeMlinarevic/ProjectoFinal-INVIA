@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const crearCuentaEstudiante = (req, res, next) => {
-    const filePath = path.join(__dirname, '../../public/pages/login.html');
+    const filePath = path.join(__dirname, '../../public/pages/crearCuentas/crearCuentaEstudiante.html');
     res.sendFile(filePath);
 };
 
