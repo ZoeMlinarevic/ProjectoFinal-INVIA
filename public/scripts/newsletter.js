@@ -30,3 +30,13 @@ export function validarFormularioNewsletter() {
         }
     });
 }
+
+export function newsletterReturnTo() {
+    document.addEventListener("DOMContentLoaded", function () {
+        // Obtener la ruta actual
+        const currentPath = window.location.pathname;
+
+        // Asignar la ruta actual al campo oculto
+        document.getElementById("newsletterReturnTo").value = currentPath;
+    });
+}

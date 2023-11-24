@@ -106,6 +106,12 @@
     padding: 1rem 3rem;
     right: 5px;
     border: none;
+    transition: all .5s ease-in-out;
+}
+
+.footer nav div button:hover {
+    background-color: var(--Blanco);
+    color: #5D60C0;
 }
 
 .footer-p-copyright {
