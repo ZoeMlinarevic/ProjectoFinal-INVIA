@@ -37,7 +37,9 @@
     "express": "^4.18.2",
     "mercadopago": "^2.0.4",
     "morgan": "^1.10.0",
-    "vercel": "^32.5.3"
+    "mysql2": "^3.6.5",
+    "sweetalert2": "^11.6.13",
+    "vercel": "^32.3.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

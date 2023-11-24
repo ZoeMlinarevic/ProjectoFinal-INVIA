@@ -1,3 +1,5 @@
+import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/+esm';
+
 export function validarFormularioNewsletter() {
     const nesletterform = document.querySelector('#nesletterform');
     const nesletterbutton = document.querySelector('#nesletterbutton');
@@ -10,9 +12,21 @@ export function validarFormularioNewsletter() {
         const emailValidado = emailExpRegular.test(email);
 
         if (!emailValidado) {
-            console.log(`correo invalido ${email}`);
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Colocaste el Email incorrectamente!',
+            });
         } else {
-            nesletterform.submit();
+            Swal.fire({
+                icon: 'success',
+                title: '¡Se ha enviado tu email exitosamente!',
+                text: '¡Buen trabajo!',
+            });
+            setTimeout(() => {
+                console.log('enviando formulario');
+                nesletterform.submit();
+            }, 1000);
         }
     });
 }

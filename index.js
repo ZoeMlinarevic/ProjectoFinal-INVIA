@@ -4,9 +4,13 @@ dotenv.config();
 import express from "express";
 import morgan from "morgan";
 import path from "path";
+
+// RUTAS
+
 import mainRouter from "./src/routes/mainRouter.js";
 import cursosRouter from "./src/routes/cursosRouter.js";
 import crearCuentaEstudianteRouter from "./src/routes/crearCuentaEstudianteRouter.js";
+import newsletter from "./src/routes/newsletterRouter.js";
 
 // MERCADO PAGO
 // import createOrderRouter from "./src/routes/payments/mercadoPago/createOrderRouter.js";
@@ -25,10 +29,17 @@ const __dirname = path.dirname(__filename);
 const publicPath = path.join(__dirname, 'public');
 app.use(express.static(publicPath && "public"));
 
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 // RUTAS
 app.use("./", mainRouter);
 app.use("/Cursos", cursosRouter);
 app.use("/Crear-Cuenta-Estudiante", crearCuentaEstudianteRouter);
+
+// RUTAS DE NEWSLETTER
+
+app.use("/newsletter", newsletter);
 
 // RUTAS DE PAYMENTS
 // MERCADO PAGO

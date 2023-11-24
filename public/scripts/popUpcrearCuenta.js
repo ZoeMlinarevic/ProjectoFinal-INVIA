@@ -45,7 +45,6 @@ export function exitPopUp() {
     if (popUpsSection) {
         popUpsSection.addEventListener("click", (e) => {
             const clickedElement = e.target;
-            console.log(clickedElement);
 
             if (!clickedElement.closest(".popUpCrearCuenta-container-grilla")) {
                 e.preventDefault();
