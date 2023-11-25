@@ -12,7 +12,7 @@
     >- Vercel
     >- Morgan
     >- MercadoPago
-    >- Mysql2
+    >- MySQL2
     
 
 ## FRONT END
