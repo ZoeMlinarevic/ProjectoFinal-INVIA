@@ -2,8 +2,14 @@ import { conn } from "../config/conm.js";
 
 const enviarNewsletter = async (email) => {
     try {
-        const [rows] = await conn.query("INSERT INTO `Newsletter` (`id`, `email`, `fecha`) VALUES (NULL, ?, NOW())", [email]);
-        return rows;
+        const [existingRows] = await conn.query("SELECT * FROM `Newsletter` WHERE `email` = ?", [email]);
+
+        if (existingRows.length === 0) {
+            const [insertRows] = await conn.query("INSERT INTO `Newsletter` (`id`, `email`, `fecha`) VALUES (NULL, ?, NOW())", [email]);
+            return insertRows;
+        } else {
+            return { error: "El email ya está registrado." };
+        }
     } catch (error) {
         throw error;
     } finally {
@@ -12,3 +18,4 @@ const enviarNewsletter = async (email) => {
 }
 
 export default enviarNewsletter;
+
