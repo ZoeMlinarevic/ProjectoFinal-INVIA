@@ -1,25 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.notFound404-body {
+    background-color: var(--Blanco);
+    overflow: hidden;
 }
-
-img {
-    width: 100%;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Not Found 404 */
 
 .notFound404-container {
     position: relative;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
 }
 
 .notFound404-container-img {
@@ -30,19 +17,23 @@ img {
     height: 100vh;
 }
 
-.notFound404 {
+.notFound404-picture {
     position: absolute;
     width: 100vw;
 }
 
-@media screen and (max-width: 1000px) {
-    .notFound404 img {
-        display: none;
-    }
+.notFound404-picture img {
+    width: 100%;
+}
 
+@media screen and (max-width: 1000px) {
     .notFound404-container {
         background-image: url("../assets/img/notFound404.jpg");
         background-size: cover;
         background-repeat: round;
+    }
+
+    .notFound404-picture img {
+        display: none;
     }
 }
