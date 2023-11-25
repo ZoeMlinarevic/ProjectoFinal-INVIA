@@ -18,4 +18,3 @@ const enviarNewsletter = async (email) => {
 }
 
 export default enviarNewsletter;
-
