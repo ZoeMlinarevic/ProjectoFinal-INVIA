@@ -12,9 +12,14 @@
     >- Vercel
     >- Morgan
     >- MercadoPago
+<<<<<<< HEAD
     >- Mysql2
     >- NodeMailer 
     
+=======
+    >- MySQL2
+    >- Firebase
+>>>>>>> main
 
 ## FRONT END
 
