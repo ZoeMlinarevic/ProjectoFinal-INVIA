@@ -20,10 +20,9 @@ const enviarNewsletter = async (email) => {
                 const htmlContent = await fs.readFile(htmlFilePath, 'utf8');
 
                 const parameters = {
-                    from: "invia.educacion@gmail.com",
+                    from: "❤INVIA invia.educacion@gmail.com",
                     to: [email],
-                    subject: "Correo de prueba",
-                    text: "Hola, este es un correo de prueba",
+                    subject: "Bienvenid@ a INVIA",
                     html: htmlContent,
                 };
 
