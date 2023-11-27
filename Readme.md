@@ -13,7 +13,7 @@
     >- Morgan
     >- MercadoPago
     >- MySQL2
-    >- NOodeMailer
+    >- NodeMailer
 
 ## FRONT END
 
