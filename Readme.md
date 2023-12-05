@@ -12,8 +12,8 @@
     >- Vercel
     >- Morgan
     >- MercadoPago
-    >- Mysql2
-    
+    >- MySQL2
+    >- NodeMailer
 
 ## FRONT END
 
