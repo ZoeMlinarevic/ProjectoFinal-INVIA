@@ -1,0 +1,84 @@
+#header {
+    position: fixed;
+    background-color: var(--Negro);
+    height: 13%;
+    margin: 0 0 0 1%;
+  }
+  #header .logo {
+    font-size: 7.8rem;
+    font-weight: bolder;
+    margin-left: 2rem;
+  }
+  #header .navbar {
+    position: fixed;
+    top: 0; left: 1rem; right: 0; 
+    padding: 2% 9% 5% 20%;
+    display: flex;
+    font-weight: bold;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #header .list-container .navbar .list-element:hover .burger-list-explorar {
+    display: block;
+  }
+  #header .list-container .navbar .list-element:hover .burger-list-comunidad {
+    display: block;
+  }
+  .burger-list-explorar{ 
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+  }
+  .burger-list-comunidad{
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    background-color: var(--Blanco);
+    border-radius: 5%;
+    width: 33rem;
+  }
+  .burger-list-comunidad li {
+    background-color: var(--Negro);
+    border-radius: 5%;
+    width: 30rem;
+    margin: 5%;
+    padding: 3%;
+  }
+  .burger-list-comunidad li:hover {
+    background-color: var(--VioletaClaro);
+    color: white;
+  }
+  .burger-list-explorar{
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    background-color: var(--Blanco);
+    border-radius: 5%;
+    width: 33rem;
+  }
+  .burger-list-explorar li {
+    background-color: var(--Negro);
+    border-radius: 5%;
+    width: 30rem;
+    margin: 5%;
+    padding: 3%;
+  }
+  .burger-list-explorar li:hover {
+    background-color: var(--VioletaClaro);
+    color: var(--Negro);
+  }
+  #header .list-container .navbar .list-element:hover {
+    transform: scale(1.1);
+    text-shadow: var(--Blanco);
+  }
+  #header .list-container .navbar .list-element-btn {
+    border: var(--Blanco) solid 0.2rem;
+    border-radius: 3rem 0 3rem 0;
+    padding: 0.5rem 7rem;
+  }
+  #header .list-container .navbar .list-element-btn:hover:hover{
+    transform: scale(1.1);
+    background-color: var(--Blanco);
+    color: var(--Negro);
+  }
