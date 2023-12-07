@@ -1,7 +1,7 @@
 export function crearCuenta() {
-    const popUpsArray = document.querySelectorAll(".list-element");
+    const popUpsArray = document.querySelectorAll(".list-element-btn");
 
-    const popUpCrearCuenta = popUpsArray[4];
+    const popUpCrearCuenta = popUpsArray[0];
 
     popUpCrearCuenta.addEventListener("click", (e) => {
         e.preventDefault();

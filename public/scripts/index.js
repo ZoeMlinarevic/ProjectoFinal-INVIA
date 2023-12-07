@@ -1,6 +1,6 @@
 import { crearCuenta, exitPopUp } from './popUpcrearCuenta.js';
 import { switchToggle } from './switchToggle.js';
-import { validarFormularioNewsletter } from './newsletter.js';
+import { validarFormularioNewsletter, newsletterReturnTo } from './newsletter.js';
 
 // Toggle
 
