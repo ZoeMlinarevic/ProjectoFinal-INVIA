@@ -265,7 +265,7 @@ El @keyframe es para la animacion y el resto para los estilos*/
 section .carousel{
   display: inline-block;
   margin: 4rem 0;
-  animation: 5s slide infinite linear;
+  animation: 10s slide infinite linear;
 }
 section .carousel img{
   height: 70px;
