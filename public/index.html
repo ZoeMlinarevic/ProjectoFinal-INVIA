@@ -29,12 +29,34 @@
                     <li><a href="">Discord</a></li>
                     </ul>
                 </li>
-                <li class="list-element"><a href="proposito">Recursos</a></li>
+                <li class="list-element"><a href="proposito">Nosotros</a></li>
                 <li class="list-element-btn">Crear Cuenta</li>
                 <li class="list-element-btn" >Login</li>
             </ul>
         </nav>
-    </header>
+    </header><section class="menu-responsive">
+        <i class="fa fa-align-justify" style="font-size:20px" onclick="toggleMenu()"></i> 
+        <div class="menu-smartphone">
+          <div class="menu-smartphone-content">
+          <h1 class="logo"><a href="#inicio">INVIA</a></h1>
+            <div class="menu-computadora">
+            <ul class="navbar">
+                <li class="list-element"><a href="#quienesSomos">Explorar</a>
+                <ul class="burger-list-explorar">
+                </ul>
+                </li>
+                <li class="list-element"><a href="#servicios">Comunidad</a>
+                  <ul class="burger-list-comunidad">
+                  </ul>
+                </li>
+                <li class="list-element"><a href="proposito">Nosotros</a></li>
+                <li class="list-element"><a href="#login" class="btn">Crear Cuenta</a></li>
+                <li class="list-element"><a href="#login" class="btn">Login</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     <section class="inicio" id="inicio">
     <div class="content">
         <h2> PLATAFORMA</h2>
@@ -198,6 +220,7 @@
     <p class="footer-p-copyright">@Copyright 2023 | Todos los Derechos Reservados</p>
 </footer>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-<script type="module" src="scripts/index.js"></script> 
+<script type="module" src="scripts/index.js"></script>
+<script src="./scripts/switchToggle.js"></script> 
 </body>
 </html>

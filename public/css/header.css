@@ -82,3 +82,48 @@
     background-color: var(--Blanco);
     color: var(--Negro);
   }
+  .fa-align-justify {
+    position: absolute;
+    top: 5%;
+    transform: translateY(-50%);
+    left: 2rem; 
+    z-index: 2; 
+  }
+  .menu-smartphone.visible {
+    display: block; 
+  }
+  .menu-smartphone {
+    display: none;
+    background-color: var(--VioletaMedio);
+    height: 100rem;
+    width: 33rem;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .menu-smartphone i {
+    margin: 1rem;
+    position: absolute;
+  }
+  .menu-smartphone .logo {
+    margin: 0 0 2rem 35rem;
+    font-size: 23rem;
+  }
+  .menu-smartphone .list-element {
+    margin: 5rem 2rem 1rem 10rem ;
+    padding: 4rem 2rem 4rem 25rem;
+    font-weight: bold;
+    font-size: 11rem;
+  }
+  .menu-smartphone .list-element:hover {
+    background-color: #3c3b3c;
+    border-radius: 2.5rem;
+  }
+  .menu-responsive .menu-smartphone .menu-computadora {
+    margin-top: 10rem;
+  }  
+  .logo {
+    font-size: 7.8rem;
+    font-weight: bolder;
+    margin-left: 2rem;
+  }

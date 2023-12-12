@@ -31,6 +31,9 @@
 .lightMode #header .list-container .navbar .list-element .btn:hover{
   color: var(--CelesteClaro);
 }
+.lightMode .menu-smartphone {
+  background-color: var(--CelesteClaro);
+}
 *{
   margin: 0;
   padding: 0;
