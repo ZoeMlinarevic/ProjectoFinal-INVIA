@@ -13,6 +13,6 @@ router.get("/SQL", cursosController.sql)
 router.get("/PYTHON", cursosController.python)
 router.get("/Logica-Programacion", cursosController.logicaDeProgramacion)
 router.get("/C", cursosController.c)
-router.get("/INGLES", cursosController.ingles)
+router.get("/Ingles", cursosController.ingles)
 
 export default router;

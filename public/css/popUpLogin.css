@@ -1,0 +1,103 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60rem;
+    padding: 2rem 4rem;
+    background: linear-gradient(#8B5DC0, #AAD9D9);
+    border-radius: 20px;
+    border: 1px solid var(--Blanco);
+}
+
+.login-container-titulo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.login-container .login-h2 {
+    font-size: 3rem;
+    color: var(--Blanco);
+}
+
+#login-cerrar {
+    color: var(--Blanco);
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.login-linea {
+    background-color: var(--Blanco);
+    width: 40%;
+}
+
+/* REDES */
+
+.login-container-redes {
+    display: flex;
+    justify-content: center;
+}
+
+.login-redes {
+    width: 35rem;
+}
+
+/* H3 Y SPAN */
+
+.login-h3 {
+    font-size: 1.5rem;
+    color: var(--Negro);
+}
+
+.login-h3-span {
+    color: var(--Blanco);
+}
+
+/* FORM */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+
+.login-form input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--Negro);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #8B5DC0;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-footer p {
+    margin: 2px;
+    font-size: 12px;
+}
+
+.login-footer a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
