@@ -1,8 +1,8 @@
 /* Estilos generales */
-/*.bodysn {
+.sobrenosotros-conteiner-body {
   margin: 0;
-  /* font-family: Arial, sans-serif; 
-}*/
+   font-family: Arial, sans-serif; 
+}
 
 .contenedorsn {
   display: flex;
@@ -30,60 +30,72 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
   padding-top: 14rem;
 }
 
 .SobreNosotrosTitulo {
   width: 100%;
-  font-size: 6rem;
+  font-size: 7.5rem;
   text-align: center;
   color: #fff;
   font-weight: 500;
-  margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.SobreNosotrosContenido {
-  width: 100%;
-  max-width: 700px;
-  font-size: 4rem;
-  font-weight: 800;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-}
-
-/* Encabezado "NUESTRO EQUIPO DE INVIA" */
-.SobreNosotrosNEI {
-  width: 100%;
-  font-size: 10rem;
-  text-align: center;
-  color: #fff;
-  font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family: 'Poppins', sans-serif;
 }
 
 /* Imagen */
 .SobreNosotrosImagen img {
   width: 100%;
-  max-width: 600px;
-  height: auto;
-  margin: 10px 0;
+  max-width: 45%;
+  border-radius: 4%;
+  margin: 18px;
+  margin-bottom: 10px;
+  float: left;
 }
 
+.SobreNosotrosImagen2 img {
+  width: 100%;
+  max-width: 30%;
+  border-radius: 5.5%;
+  margin: 30px;
+  margin-bottom: 100px;
+  float: right;
+  
+}
+
+
+.SobreNosotrosContenido {
+  width: 100%;
+  max-width: 800px;
+  font-size: 3.5rem;
+  margin: 20px;
+  text-align: right;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 100px;
+}
+
+.SobreNosotrosContenido2 {
+  width: 100%;
+  max-width: 800px;
+  font-size: 3.5rem;
+  margin: 30px;
+  text-align: left;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 100px;
+}
+
+
 /* Estilos para el ContenidoSN1 y ContenidoSN2 */
-.ContenidoSN1,
-.ContenidoSN2 {
+.ContenidoSN1 {
   width: 100%;
   max-width: 800px;
   margin: 10px auto;
-  /* font-family: Poppins; */ /*Se agrego tipografia en linea 54*/
   font-size: 4rem;
-  text-align: left; /*de right a left*/
+  text-align: right; 
   color: #cacaca;
 }
-
 
 .integrante {
   display: flex;
@@ -93,7 +105,6 @@
   margin: 10px;
   flex: 1;
 }
-
 .integrante img {
   width: 100%;
   max-width: 150px;
@@ -104,7 +115,14 @@
 
 .integrante-info {
   width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
   color: #cacaca;
+  
 }
 
 .integrante-info h2 {
