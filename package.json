@@ -1,0 +1,49 @@
+{
+  "type": "module",
+  "name": "projectofinal-invia",
+  "version": "1.0.0",
+  "description": "Explora INVIA, tu plataforma educativa gratuita. Accede a cursos sin costo y mantente al día con las nuevas tendencias en tecnología, negocios y más. Descubre, aprende y crece con expertos en sus campos. ¡Únete a nuestra comunidad educativa hoy! 🎓✨",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Andres Felipe Clavijo Rojas",
+    "email": "andresclavijo0822@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Braian Andres Gómez",
+      "email": "braiangomez371@gmail.com"
+    },
+    {
+      "name": "Rocío Selena Caballero Alves",
+      "email": "caballeroalvesrocioselena@gmail.com"
+    },
+    {
+      "name": "Zoe Mlinarevic",
+      "email": "Zoemmedl@gmail.com"
+    },
+    {
+      "name": "Diego",
+      "email": "diego_up47@hotmail.com"
+    }
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase": "^10.6.0",
+    "mercadopago": "^2.0.4",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.5",
+    "nodemailer": "^6.9.7",
+    "sweetalert2": "^11.6.13",
+    "vercel": "^32.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

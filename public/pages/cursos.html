@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assests/img/Invia.png" type="image/x-icon">
+    <title>INVIA - CURSOS</title>
+    <link rel="stylesheet" href="../css/curso.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  
+  <header id="header">
+    <nav class="list-container">
+        <h1 class="list-element"><a href="/" class="logo">INVIA</a></h1>
+        <ul class="navbar">
+            <li class="list-element"><a href="./pages/cursos.html">Explorar</a></li>
+                <li class="list-element"><a href="">Comunidad</a></li>
+                <li class="list-element"><a href="proposito">Nosotros</a></li>
+                <li class="list-element-btn"><a href="">Crear Cuenta</a></li>
+                <li class="list-element-btn"><a href="">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="menu-responsive">
+        <i class="fa fa-align-justify" style="font-size:20px" onclick="toggleMenu()"></i> 
+        <div class="menu-smartphone">
+          <div class="menu-smartphone-content">
+          <h1 class="logo"><a href="#inicio">INVIA</a></h1>
+            <div class="menu-computadora">
+            <ul class="navbar">
+                <li class="list-element"><a href="./pages/cursos.html">Explorar</a>
+                <ul class="burger-list-explorar">
+                </ul>
+                </li>
+                <li class="list-element"><a href="#servicios">Comunidad</a>
+                  <ul class="burger-list-comunidad">
+                  </ul>
+                </li>
+                <li class="list-element"><a href="proposito">Nosotros</a></li>
+                <li class="list-element"><a href="#login" class="btn">Crear Cuenta</a></li>
+                <li class="list-element"><a href="#login" class="btn">Login</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="aside-logo-container">
+        <div class="aside-logo"> 
+            <div class="container">
+                <aside class="sidebar">
+                  <label class="switch" id="toggle">
+                    <input type="checkbox" id="switch" onclick="myFunction()">
+                    <span class="slider">
+                      <div class="actuator">
+                        <div class="actuator-background">
+                          <div class="moon">
+                            <div class="crater moon-crater-1">
+                            </div>
+                            <div class="crater moon-crater-2">
+                            </div>
+                            <div class="crater moon-crater-3">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="actuator-shadow actuator-shadow-1">
+                      </div>
+                      <div class="actuator-shadow actuator-shadow-2">
+                      </div>
+                      <div class="actuator-shadow actuator-shadow-3">
+                      </div>
+                      <div class="slider-background">
+                        <div class="day">
+                          <div class="clouds">
+                            <div class="cloud cloud-1">
+                            </div>
+                            <div class="cloud cloud-2">
+                            </div>
+                            <div class="cloud cloud-3">
+                            </div>
+                          </div>
+                          <div class="dimmed-clouds">
+                            <div class="cloud dimmed cloud-1">
+                            </div>
+                            <div class="cloud dimmed cloud-2">
+                            </div>
+                            <div class="cloud dimmed cloud-3">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="night">
+                          <div class="stars">
+                            <div class="star star-1">
+                            </div>
+                            <div class="star star-2">
+                            </div>
+                            <div class="star star-3">
+                            </div>
+                            <div class="star star-4">
+                            </div>
+                            <div class="star star-5">
+                            </div>
+                            <div class="star star-6">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </span>
+                  </label>
+                </aside>
+                </div>
+        </div>
+        </section> 
+        <div class="cursos-heading-container">
+        <div class="cursos-heading">
+            <h1>CURSOS</h1>
+        </div>
+        <div class="cursos-heading-line-image">
+          <img src="assets/img/Logos/linea-cursos.png" alt="linea-horizontal">
+        </div>
+        </div>
+        <!-- Lo que hice aca fue los botones de curso, dentro tiene los logos en imagen-->
+    <section class="cursos">
+        <button class="curso-button" id="btn-logica">
+          <div class="image-boton-curso-container">
+            <img src="assets/img/Logos/codigo.png" alt="codigo">
+          </div><a href="/cursos/Logica-Programacion">
+            <h2>Lógica de Programación</h2>
+          </a>
+        </button>
+        <button class="curso-button" id="btn-ingles">
+          <div class="image-boton-curso-container">
+            <img src="assets/img/Logos/ingles.png" alt="ingles">
+          </div>
+          <a href="/cursos/Ingles">
+            <h2>Inglés</h2>
+          </a>
+        </button>
+
+        <button class="curso-button" id="btn-c">
+          <div class="image-boton-curso-container">
+            <img src="assets/img/Logos/c1.png" alt="c">
+          </div>
+          <a href="./cursoPaginas/cursoC.html">
+            <h2>Lenguaje en C</h2>
+          </a>
+        </button>
+
+        <button class="curso-button" id="btn-html">
+          <div class="image-boton-curso-container">
+            <img src="assets/img/Logos/html-5.png" alt="html">
+          </div>
+          <a href="/cursos/HTML">
+            <h2>Desarrollo web con html</h2>
+          </a>
+         </button>
+
+         <button class="curso-button" id="btn-css">
+          <div class="image-boton-curso-container">
+            <img src="assets/img/Logos/css3.png" alt="CSS">
+          </div>
+          <a href="./cursoPaginas/cursoCss.html">
+            <h2>Estilos con CSS</h2>
+          </a>
+         </button>
+
+         <button class="curso-button" id="btn-js">
+          <div class="image-boton-curso-container">
+            <img src="assets/img/Logos/javascript-logo-420x420.png" alt="JS">
+          </div>
+          <a href="./cursoPaginas/cursoJS.html">
+            <h2>JavaScript</h2>
+          </a>
+         </button>
+
+         <button class="curso-button" id="btn-python">
+          <div class="image-boton-curso-container">
+            <img src="assets/img/Logos/python.png" alt="Python">
+          </div>
+          <a href="./cursoPaginas/cursoPython.html"></a>
+            <h2>Desarrollo en Python</h2>
+         </button>
+
+         <button class="curso-button" id="btn-node">
+          <div class="image-boton-curso-container">
+            <img src="assets/img/Logos/node-js.png" alt="NodeJS">
+          </div>
+          <a href="./cursoPaginas/cursoNode.html">
+            <h2>Desarrollo en NodeJS</h2>
+          </a>
+         </button>
+         <button class="curso-button" id="btn-sql">
+          <div class="image-boton-curso-container">
+            <img src="assets/img/Logos/servidor-sql.png" alt="sql">
+          </div>
+          <a href="./cursoPaginas/cursoSql.html">
+            <h2>Base de Datos SQL</h2>
+          </a>
+         </button>
+    </section> 
+    <footer class="footer">
+      <nav class="footer-nav container-c">
+          <div class="footer-nav-div">
+              <div>
+                  <h2><a href="/" class="footer-h2">INVIA</a></h2>
+                  <p class="footer-p">Forjando un mañana brillante a <span>través de educación para todos.</span><span>Conéctate, aprende, ¡crece y</span>  construye tu futuro hoy!</p>
+                  <div class="footer-nav-container-picture">
+                      <picture class="footer-picture-img">
+                          <img src="../assets/img/social/apple.png" alt="Red Social Facebook">
+                      </picture>
+                      <picture class="footer-picture-img">
+                          <img src="../assets/img/social/apple.png" alt="Red Social X">
+                      </picture>
+                      <picture class="footer-picture-img">
+                          <img src="../assets/img/social/apple.png" alt="Red Social Instagram">
+                      </picture>
+                      <picture class="footer-picture-img">
+                          <img src="../assets/img/social/apple.png" alt="Red Social linkedin">
+                      </picture>
+                  </div>
+              </div>
+              <div class="footer-nav-div-mobile-relative">
+                  <h3>Enlaces</h3>
+                  <ul>
+                      <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Equipo</li>
+                      <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Recursos</li>
+                      <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Contactanos</li>
+                      <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Donaciones </li>
+                      <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>App mobile </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-nav-div">
+              <div class="footer-nav-div-mobile-absolute">
+                  <h3>Cursos</h3>
+                  <ul>
+                      <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Backend</li>
+                      <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Frontend</li>
+                      <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Base de datos</li>
+                      <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Idiomas</li>
+                  </ul>
+              </div>
+              <div>
+                  <h3>Newsletter</h3>
+                  <form action="/newsletter/enviado" method="post" id="nesletterform">
+                      <div class="footer-form-div">
+                          <input type="email" name="newsletter" id="newsletter" placeholder="Correo Electronico">
+                          <input type="hidden" name="newsletterReturnTo" id="newsletterReturnTo" value="">
+                          <button type="submit" name="submitNewsletter" id="nesletterbutton">Enviar</button>
+                      </div>
+                      <label for="newsletter">Suscríbete al boletín y obtén beneficios <span>exclusivos. Conoce nuevos cursos, oportunidades</span><span>y novedades. Aprende con una comunidad</span> apasionada.</label>
+                  </form>
+              </div>
+          </div>
+      </nav>
+      <p class="footer-p-copyright">@Copyright 2023 | Todos los Derechos Reservados</p>
+  </footer>
+  <script type="module" src="../scripts/index.js"></script>
+  <script src="../scripts/switchToggle.js"></script> 
+</body>
+</html>

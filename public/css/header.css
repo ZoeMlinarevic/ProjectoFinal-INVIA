@@ -1,0 +1,135 @@
+#header {
+    position: fixed;
+    height: 13%;
+    margin: 0 0 0 1%;
+  }
+  #header .logo {
+    font-size: 7.8rem;
+    font-weight: bolder;
+    margin-left: 2rem;
+  }
+  #header .navbar {
+    position: fixed;
+    top: 0; left: 1rem; right: 0; 
+    padding: 2% 9% 5% 20%;
+    display: flex;
+    font-weight: bold;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #header .list-container .navbar .list-element:hover {
+    cursor: pointer;
+  }
+  #header .list-container .navbar .list-element:hover .burger-list-explorar {
+    display: block;
+  }
+  #header .list-container .navbar .list-element:hover .burger-list-comunidad {
+    display: block;
+  }
+  .burger-list-explorar{ 
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+  }
+  .burger-list-comunidad{
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    background-color: var(--Blanco);
+    border-radius: 5%;
+    width: 33rem;
+  }
+  .burger-list-comunidad li {
+    background-color: var(--Negro);
+    border-radius: 5%;
+    width: 30rem;
+    margin: 5%;
+    padding: 3%;
+  }
+  .burger-list-comunidad li:hover {
+    background-color: var(--VioletaClaro);
+    color: white;
+  }
+  .burger-list-explorar{
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    background-color: var(--Blanco);
+    border-radius: 5%;
+    width: 33rem;
+  }
+  .burger-list-explorar li {
+    background-color: var(--Negro);
+    border-radius: 5%;
+    width: 30rem;
+    margin: 5%;
+    padding: 3%;
+  }
+  .burger-list-explorar li:hover {
+    background-color: var(--VioletaClaro);
+    color: var(--Negro);
+  }
+  #header .list-container .navbar .list-element:hover {
+    transform: scale(1.1);
+    text-shadow: var(--Blanco);
+  }
+  #header .list-container .navbar .list-element-btn {
+    border: var(--Blanco) solid 0.2rem;
+    border-radius: 3rem 0 3rem 0;
+    padding: 0.5rem 7rem;
+  }
+  #header .list-container .navbar .list-element-btn:hover{
+    transform: scale(1.1);
+    background-color: var(--Blanco);
+    color: var(--Negro);
+  }
+  
+  #header .list-container a:hover{
+    color: var(--Negro);
+  }
+  .fa-align-justify {
+    position: absolute;
+    top: 5%;
+    transform: translateY(-50%);
+    left: 2rem; 
+    z-index: 2; 
+  }
+  .menu-smartphone.visible {
+    display: block; 
+  }
+  .menu-smartphone {
+    display: none;
+    background-color: var(--VioletaMedio);
+    height: 100rem;
+    width: 33rem;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .menu-smartphone i {
+    margin: 1rem;
+    position: absolute;
+  }
+  .menu-smartphone .logo {
+    margin: 0 0 2rem 26rem;
+    font-size: 21rem;
+  }
+  .menu-smartphone .list-element {
+    margin: 5rem 2rem 1rem 2rem ;
+    padding: 4rem 2rem 4rem 25rem;
+    font-weight: bold;
+    font-size: 11rem;
+  }
+  .menu-smartphone .list-element:hover {
+    background-color: #3c3b3c;
+    border-radius: 2.5rem;
+  }
+  .menu-responsive .menu-smartphone .menu-computadora {
+    margin-top: 10rem;
+  }  
+  .logo {
+    font-size: 7.8rem;
+    font-weight: bolder;
+    margin-left: 2rem;
+  }

@@ -1,0 +1,184 @@
+.lightMode #header .list-container .navbar .list-element .btn:hover{
+  color: var(--CelesteClaro);
+}
+.lightMode .body-container-py {
+  background:linear-gradient(#00699E, var(--CelesteClaro))
+} 
+.lightMode .body-container-js {
+  background: linear-gradient(#6F1A7A, #AAD9D9)
+}
+.lightMode .body-container-logica{
+  background:linear-gradient(#8BA300, var(--CelesteClaro))
+}
+.lightMode .body-container-ingles{
+  background:linear-gradient(#CC0300, var(--CelesteClaro))
+}
+.lightMode .body-container-c{
+  background:linear-gradient(#083C7D, var(--CelesteClaro))
+}
+.lightMode .body-container-html{
+  background:linear-gradient(#009E84, var(--CelesteClaro))
+} 
+.lightMode .body-container-css{
+  background:linear-gradient(#FA6C00, var(--CelesteClaro))
+}
+.lightMode .body-container-node{
+  background:linear-gradient(#F5B800, var(--CelesteClaro))
+} 
+.lightMode .body-container-sql{
+  background:linear-gradient(#B80081, var(--CelesteClaro))
+}  
+.body-container-py {
+  min-height: 100vh;
+  background: linear-gradient(#00699E,var(--Negro));
+}
+.body-container-js {
+  min-height: 100vh;
+  background: linear-gradient(#6F1A7A, var(--Negro));
+}
+.body-container-css {
+  min-height: 100vh;
+  background: linear-gradient(#FA6C00, var(--Negro));
+}
+.body-container-html {
+  min-height: 100vh;
+  background: linear-gradient(#009E84, var(--Negro));
+}
+.body-container-ingles {
+  min-height: 100vh;
+  background: linear-gradient(#CC0300, var(--Negro));
+}
+.body-container-logica {
+  min-height: 100vh;
+  background: linear-gradient(#8BA300, var(--Negro));
+}
+.body-container-node {
+  min-height: 100vh;
+  background: linear-gradient(#F5B800, var(--Negro));
+}
+.body-container-sql {
+  min-height: 100vh;
+  background: linear-gradient(#B80081, var(--Negro));
+}
+.body-container-c {
+  min-height: 100vh;
+  background: linear-gradient(#083C7D, var(--Negro));
+}
+    .section-contenido-container-cursos {
+      display: flex;
+      flex: 1 1 50;
+      margin: 2%;
+    }
+    .section-contenido-container-cursos .contenido-container-cursos {
+      margin: 0 20rem 0 0rem;
+    }
+    .contenido-container-cursos .titulo-cursos {
+      text-transform: uppercase;
+      font-size: 8.7rem;
+    }
+    .contenido-container-cursos .btn-inscribirse-cursos {
+      margin: 1rem;
+    }
+    .section-contenido-container-cursos .contenido-parrafo-cursos {
+      margin: 2rem 0 2rem 0;
+    }
+    .section-contenido-container-cursos p {
+      font-weight: 500;
+      font-size: 3rem;
+    }
+    .section-contenido-container-cursos .imagen-container-cursos {
+      margin:0 5rem 0 0;
+    }
+    .section-contenido-container-cursos .img-container {
+      margin: 7rem;
+    }
+    .section-contenido-container-cursos .img-container img {
+      height: 30rem;
+    }
+    .section-contenido-container-cursos .descripcion-container-cursos #btn-smartphone {
+      visibility: hidden;
+    }
+    .horizontal-line-container-cursos .horizontal-line-cursos {
+      border: solid var(--Blanco) 0.5rem;
+      width: 50rem;
+    }
+    .btn-inscribirse-cursos {
+      font-weight: 600;
+      color: var(--Blanco);
+      font-size: 2.9rem;
+      border: var(--Blanco) solid 0.2rem;
+      border-radius: 0.8rem; 
+      background-color: var(--VioletaClaro);
+      padding: 1.5rem 5rem 1.5rem 5rem;
+    }
+    .btn-inscribirse-cursos:hover {
+      transition-duration: 0.5s ;
+      background-color: var(--Blanco) ;
+      color: var(--VioletaClaro);
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    /*Media Queries*/
+@media (min-width:320px) and (max-width:349px) {
+  html{ font-size: 25%;}
+  #btn-desktop {visibility: hidden;}
+  .section-contenido-container-cursos .descripcion-container-cursos #btn-smartphone {visibility: visible;}
+  .horizontal-line-cursos {display: none;}
+  .section-contenido-container-cursos {display: block;}
+  .section-contenido-container-cursos .contenido-parrafo-cursos {margin: 0 5rem 10rem 0;}
+  .imagen-container-cursos {display: flex; flex: 1 1 50; border-top: solid var(--Blanco) 1rem; }
+  .descripcion-container-cursos {margin: 7rem 0rem 0 9rem; }
+  .descripcion-container-cursos p {margin: 1rem;}
+  
+  /* 
+  .list-container .menu-computadora {display: none;}
+  .img-container-inicio {display: none;}
+  .horizontal-line { display: none; }
+  .menu-smartphone {height: 100%; width: 100%; z-index: 2000;}
+  .aside-logo-container {z-index: 3; position: relative; right: 2px; margin-right: 0;} */
+}
+@media (min-width:350px) and (max-width:460px) {
+  html{ font-size: 20%;}
+  #btn-desktop {visibility: hidden;}
+  .section-contenido-container-cursos .descripcion-container-cursos #btn-smartphone {visibility: visible;}
+  .horizontal-line-cursos {display: none;}
+  .section-contenido-container-cursos {display: block;}
+  .section-contenido-container-cursos .contenido-parrafo-cursos {margin: 0 5rem 10rem 0;}
+  .imagen-container-cursos {display: flex; flex: 1 1 50; border-top: solid var(--Blanco) 1rem; }
+  .descripcion-container-cursos {margin: 7rem 0rem 0 9rem; }
+  .descripcion-container-cursos p {margin: 1rem;}
+  #header {display: none;}
+  .img-container-inicio {height: 89rem; width: 22rem; margin: 2rem 55rem 0 5rem;}
+  .horizontal-line { display: none; /*  height: 45rem; margin: 5rem 5rem 0 2rem;
+  border: 0.5rem solid; */}
+  #inicio {height: 100%; margin-bottom: 0;}
+  .content .parrafo-INVIA {white-space: nowrap;}
+  .menu-smartphone {height: 100%; width: 100%; display: block;}
+  .menu-smartphone-content .list-element {font-size: 1rem;}
+  .aside-logo-container {z-index: 3;}
+  .menu-responsive {display: none;} 
+}
+@media (min-width: 461px) and (max-width:879px){
+  html{ font-size: 30%;}
+  .list-container .menu-computadora {display: none;}
+  .img-container-inicio {height: 89rem; width: 22rem; margin: 2rem 55rem 0 5rem;}
+  .horizontal-line { height: 45rem; margin: 5rem 5rem 0 2rem;
+    border: 0.5rem solid; }
+  .content .parrafo-INVIA {white-space: nowrap;}
+  .menu-responsive {display: none; }
+}
+
+@media (min-width: 880px) and (max-width:1100px){
+  html{ font-size: 30%;}
+  .list-container .menu-computadora {display: none;}
+  .img-container-inicio {height: 89rem; width: 22rem; margin: 2rem 55rem 0 5rem;}
+  .horizontal-line { height: 45rem; margin: 5rem 5rem 0 2rem;
+    border: 0.5rem solid; }
+  .content .parrafo-INVIA {white-space: nowrap;}
+  .menu-responsive {display: none;}
+}
+
+@media (min-width: 1101px) and (max-width:2000px){
+  .menu-responsive {display: none;} 
+  .menu-responsive i {display: none;} 
+}

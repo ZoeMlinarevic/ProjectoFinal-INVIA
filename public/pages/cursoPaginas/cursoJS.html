@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/cursoPaginas.css">
+</head>
+<body>
+  <div class="body-container-js">
+    
+    <header id="header">
+      <nav class="list-container">
+          <h1 class="list-element"><a href="/" class="logo">INVIA</a></h1>
+          <ul class="navbar">
+              <li class="list-element"><a href="./pages/cursos.html">Explorar</a></li>
+                  <li class="list-element"><a href="">Comunidad</a></li>
+                  <li class="list-element"><a href="proposito">Nosotros</a></li>
+                  <li class="list-element-btn"><a href="">Crear Cuenta</a></li>
+                  <li class="list-element-btn"><a href="">Login</a></li>
+              </ul>
+          </nav>
+      </header>
+      <section class="menu-responsive">
+          <i class="fa fa-align-justify" style="font-size:20px" onclick="toggleMenu()"></i> 
+          <div class="menu-smartphone">
+            <div class="menu-smartphone-content">
+            <h1 class="logo"><a href="#inicio">INVIA</a></h1>
+              <div class="menu-computadora">
+              <ul class="navbar">
+                  <li class="list-element"><a href="./pages/cursos.html">Explorar</a>
+                  <ul class="burger-list-explorar">
+                  </ul>
+                  </li>
+                  <li class="list-element"><a href="#servicios">Comunidad</a>
+                    <ul class="burger-list-comunidad">
+                    </ul>
+                  </li>
+                  <li class="list-element"><a href="proposito">Nosotros</a></li>
+                  <li class="list-element"><a href="#login" class="btn">Crear Cuenta</a></li>
+                  <li class="list-element"><a href="#login" class="btn">Login</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+    <section class="aside-logo-container">
+        <div class="aside-logo"> 
+            <div class="container">
+                <aside class="sidebar">
+                  <label class="switch" id="toggle">
+                    <input type="checkbox" id="switch" onclick="myFunction()">
+                    <span class="slider">
+                      <div class="actuator">
+                        <div class="actuator-background">
+                          <div class="moon">
+                            <div class="crater moon-crater-1">
+                            </div>
+                            <div class="crater moon-crater-2">
+                            </div>
+                            <div class="crater moon-crater-3">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="actuator-shadow actuator-shadow-1">
+                      </div>
+                      <div class="actuator-shadow actuator-shadow-2">
+                      </div>
+                      <div class="actuator-shadow actuator-shadow-3">
+                      </div>
+                      <div class="slider-background">
+                        <div class="day">
+                          <div class="clouds">
+                            <div class="cloud cloud-1">
+                            </div>
+                            <div class="cloud cloud-2">
+                            </div>
+                            <div class="cloud cloud-3">
+                            </div>
+                          </div>
+                          <div class="dimmed-clouds">
+                            <div class="cloud dimmed cloud-1">
+                            </div>
+                            <div class="cloud dimmed cloud-2">
+                            </div>
+                            <div class="cloud dimmed cloud-3">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="night">
+                          <div class="stars">
+                            <div class="star star-1">
+                            </div>
+                            <div class="star star-2">
+                            </div>
+                            <div class="star star-3">
+                            </div>
+                            <div class="star star-4">
+                            </div>
+                            <div class="star star-5">
+                            </div>
+                            <div class="star star-6">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </span>
+                  </label>
+                </aside>
+                </div>
+        </div>
+        </section> 
+      
+      <section class="section-contenido-container-cursos">
+        <div class="contenido-container-cursos">
+          <h1 class="titulo-cursos">
+            JAVASCRIPT
+          </h1>
+          <p class="contenido-parrafo-cursos">Este curso te llevará a explorar el fascinante mundo de la programación del lado del cliente. A lo largo de estas lecciones, descubrirás los fundamentos esenciales de JavaScript, el lenguaje de programación que impulsa la interactividad en la web. Ya sea que estés dando tus primeros pasos en el desarrollo web o busques fortalecer tus habilidades, aquí encontrarás una guía clara y práctica para entender y aplicar JavaScript. Prepárate para dar vida a tus páginas web y mejorar la experiencia del usuario. ¡Comencemos a desbloquear el potencial creativo de JavaScript!
+          </p>
+          <button class="btn-inscribirse-cursos" id="btn-desktop">
+            INSCRIBIRSE
+          </button>
+        </div>
+        <div class="imagen-container-cursos">
+          <div class="img-container">
+            <img src="/public/assets/img/Logos/javascript-logo-420x420.png" alt="JavaScript-img">
+          </div>
+          <div class="horizontal-line-container-cursos">
+            <hr class="horizontal-line-cursos">
+          </div>
+          <div class="descripcion-container-cursos">
+            <p>Reseña:4.8</p>
+            <p>Nivel:Principiante</p>
+            <p>Duración:6 Meses</p>
+            <p>Cronograma:Flexible</p>
+            <button class="btn-inscribirse-cursos" id="btn-smartphone">
+              INSCRIBIRSE
+            </button>
+          </div>
+        </div>
+      </section>
+      <script src="/public/scripts/switchToggle.js"></script>
+      <script  type="module" src="/index.js"></script> 
+      </div>
+</body>
+</html>

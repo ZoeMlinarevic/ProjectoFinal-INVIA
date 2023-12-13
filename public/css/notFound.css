@@ -1,0 +1,39 @@
+.notFound404-body {
+    background-color: var(--Blanco);
+    overflow: hidden;
+}
+
+.notFound404-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.notFound404-container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.notFound404-picture {
+    position: absolute;
+    width: 100vw;
+}
+
+.notFound404-picture img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .notFound404-container {
+        background-image: url("../assets/img/notFound404.jpg");
+        background-size: cover;
+        background-repeat: round;
+    }
+
+    .notFound404-picture img {
+        display: none;
+    }
+}

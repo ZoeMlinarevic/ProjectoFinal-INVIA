@@ -1,56 +1,93 @@
-/* Estilos generales para el cuerpo de la página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #070606cb;
-    margin: 0;
-    padding: 0;
-}
 
-/* Estilos para el encabezado */
-header {
-    background-color: #472B71;
-    color: #fff;
-    padding: 20px;
-    text-align:left;
-}
-
-header h1 {
-    font-size: 2em;
-}
-
+.lightMode{
+    background-color: var(--CelesteClaro);
+  } 
+  .lightMode .inicio .content #estudio {
+    background-color: var(--CelesteClaro);
+  }
+  .lightMode #header .list-container .navbar .list-element .btn:hover{
+    color: var(--CelesteClaro);
+  }
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 3rem;
+    margin: 5%;
+    font-weight: lighter;
+  }
+  .cursos-heading-container {
+    margin: 5%;
+  }
+  .cursos-heading {
+    font-size: 3.1rem;
+  }
+  .cursos-heading-line-image img{
+    width: 95%;
+  }
 /* Estilos para los botones de cursos */
-.curso-button {
+  .curso-button {
+    display: flex;
     background-color: #472B71;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 25px;
-    margin: 15px;
-    cursor:pointer ;
-    width: 340px;
-    text-align: right;
-    transition: background-color 0.5s;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    border: solid var(--Blanco) 0.4rem;
+    border-radius: 3rem;
+    padding: 2rem 5rem 2rem 5rem;
+    margin: 1%;
+    width: 50rem;
+    text-transform: uppercase;
+    cursor:pointer;
+} 
+  .curso-button:hover {
+      transform: scale(1.1);
+} 
+.curso-button h2 {
+margin-left: 6.5rem;
+padding-top: 3%; 
 }
-
-/* Estilos para la imagen dentro del botón */
-.curso-button img {
-    max-width: 20%;
-    border-radius: 5px 5px 0 0;
-    float: left;
+  #btn-logica {
+      background-color: #8BA300;
+  }
+  #btn-ingles {
+      background-color: #CC0300;
+  }
+  #btn-c {
+      background-color: #083C7D;
+  }
+  #btn-html {
+      background-color: #009E84;
+  }
+  #btn-css {
+      background-color: #FA6C00;
+  }
+  #btn-js {
+      background-color: #6F1A7A;
+      padding-right: 0;
+  }
+  #btn-python {
+      background-color: #00699E;
+  }
+  #btn-node {
+      background-color: #F5B800;
+  }
+  #btn-sql {
+      background-color: #B80081;
+  }
+.image-boton-curso-container img{
+height: 8rem;
+width: 8rem;
+margin: 1%;
 }
-
-.curso-button:hover {
-    background-color: #472B71;
+@media (min-width:320px) and (max-width:359px) {
+html {font-size: 20%;}
+.curso-button {height: 25rem; width:95%;}
+.curso-button img {height: 20rem; width: 20rem;}
+.curso-button h2 {padding: 5rem; }
+#header .list-container {display: none;}
 }
-
-#botones {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-
-
-
+@media (min-width:360px) and (max-width:799px) {
+  html {font-size: 25%;}
+  .curso-button {height: 30rem; width:95%;}
+  .curso-button img {height: 20rem; width: 20rem;}
+  .curso-button h2 {padding: 5rem; }
+  .list-container {display: none;}
+  }

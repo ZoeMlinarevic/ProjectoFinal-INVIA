@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap');
+@import url(crearCuenta.css);
+@import url(notFound.css);
+@import url(sweetAlert.css);
+@import url(popUpLogin.css);
+@import url(popUpCrearCuenta.css);
+@import url(header.css);
+@import url(toggle.css);
+@import url(footer.css);
+
 :root{
   /*Fonts*/
   --Poppins: 'Poppins', sans-serif;
@@ -7,6 +16,19 @@
   --Negro: black;
   --VioletaClaro:#5D60C0;
   --VioletaMedio:#835CBF;
+  --CelesteClaro:#AAD9D9;
+}
+.lightMode{
+  background-color: var(--CelesteClaro);
+} 
+.lightMode .inicio .content #estudio {
+  background-color: var(--CelesteClaro);
+}
+.lightMode #header .list-container .navbar .list-element .btn:hover{
+  color: var(--CelesteClaro);
+}
+.lightMode .menu-smartphone {
+  background-color: var(--CelesteClaro);
 }
 *{
   margin: 0;
@@ -31,125 +53,81 @@ body {
 }
 
 /*-----ctrl+D para seleccionar y editar todos los heder al mismo tiempo-----------*/
-header {
-  position: fixed;
-  background-color: var(--Negro);
-  height: 13%;
-  top: 0; left: 0; right: 0;
-  margin: 0 0 0 1%;
-}
-header .logo {
-  font-size: 7.8rem;
-  font-weight: bolder;
-  color: var(--B);
-  margin-left: 2rem;
-}
-header .navbar {
-  position: fixed;
-  top: 0; left: 1rem; right: 0; 
-  padding: 2% 9% 5% 20%;
+
+.inicio {
   display: flex;
-  font-weight: bold;
-  font-size: 3rem;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-}
-header .list-container .navbar .list-element:hover {
-  transform: scale(1.1);
-  text-shadow: var(--Blanco);
-}
-header .list-container .navbar .list-element .btn {
-  border: var(--Blanco) solid 0.2rem;
-  border-radius: 3rem 0 3rem 0;
-  padding: 0.5rem 7rem;
-  margin: 0 0 0 3rem;
-}
-header .list-container .navbar .list-element .btn:hover{
-  transform: scale(1.1);
-  background-color: var(--Blanco);
-  color: var(--Negro);
-}
-/*Aca empieza lo que seria el codigo del toggle
-para el navbar responsive.*/
-header .checkbox-btn {
-  font-size: 5.8rem;
-  float: right;
-  display: none;
-}
-header .checkbox-btn:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-header #checkbox-check {
-  display: none;
-}
-section {
-  display: flex;
+  flex: 1 1 50;
   margin: 2rem 0;
   padding-left: 5%;
-  padding-top: 10%;
+  padding-top: 11%;
+  height: 125rem;
 }
 .content {
   margin-right: 3%;
 }
-  section h2 {
+.inicio h2 {
   font-size: 4.9rem;
 }
-section h1 {
+.inicio h1 {
   color: var(--VioletaClaro);
   font-size: 10.5rem;
 } 
-section p {
+.inicio .parrafo-INVIA {
   font-size: 3.4rem;
 }
-section  .btn-container {
+.inicio  .btn-container {
   display: flex;
   flex: 1 1 30;
   justify-content: space-between;
   margin-top: 5rem;
   padding: 0 1rem 0 1rem;
 }
-section .content .btn-container .btn {
+.inicio .content .btn-container .btn {
   font-size: 2.9rem;
   border: var(--Blanco) solid 0.2rem;
   border-radius: 0.4rem; 
 }
-section .content #cursos {
+.inicio .content #cursos {
   font-weight: bold;
   color: var(--Blanco);
   background-color: var(--VioletaClaro);
   padding: 2rem 5rem 2rem 5rem;
 }
-section .content #estudio {
+.inicio .content #estudio {
   font-weight: bold;
   color: var(--VioletaClaro);
   background-color: var(--Negro);
   padding: 2rem 5rem 2rem 5rem;
 }
-section .btn-container #estudio:hover {
+.inicio .btn-container #estudio:hover {
   transition-duration: 0.5s ;
   background-color: var(--Blanco);
   color: var(--VioletaClaro);
   transform: scale(1.1);
   cursor: pointer;
 }
-section .btn-container #cursos:hover {
+.inicio .btn-container #cursos:hover {
   transition-duration: 0.5s ;
   background-color: var(--Blanco) ;
   color: var(--VioletaClaro);
   transform: scale(1.1);
   cursor: pointer;
 }
-.img-container {
-  border-left: var(--Blanco) solid 0.7rem;
-  margin-left: 5%;
+.horizontal-line{
+  height: 55rem;
+  margin: 10rem 5rem 0 20rem;
+  border: 0.5rem solid;
+}
+.img-container-inicio {
+  margin: 3rem 15rem 0 5rem;
+  height: 125rem;
+  width: 70rem;
 }
 .inicio div #foto-chica {
   border: var(--Blanco) solid 0.6rem; 
   border-radius: 5rem;
-  height: 70%;
-  margin: 0 20% 0% 20%;
+  height: 55%;
+  margin: 0 0% 0% 10%;
 }
 /*Aca empieza la barra lateral de marcas*/
 .aside-logo-container {
@@ -157,27 +135,12 @@ section .btn-container #cursos:hover {
   flex-direction: column;
   align-items: flex-end;
   padding: 0;
-  margin-left: 2rem;
   }
   .aside-logo {
-  position: fixed;
-  background-color: var(--Negro);
+    right: 2rem;
   }
   .inicio .aside-logo li:hover {
   transform: scale(1.1);
-  }
-  #chatgpt {
-  position: relative;
-  top: 0.5rem;
-  }
-  #discord {
-    position: relative;
-    left: 0.5rem;
-    bottom: 0.4rem;
-  }
-  #twitter {
-    position: relative;
-    left: 0.2rem;
   }
   /*Este es el sector de los rombos, estan metidos en un div
   y los movi con la posicion absolute para que esten en
@@ -210,30 +173,66 @@ El @keyframe es para la animacion y el resto para los estilos*/
   background-color: var(--Blanco);
   overflow: hidden;
   padding: 3rem 3rem;
+  height: 30rem;
 }
-section .carousel{
+.carousel{
   display: inline-block;
   margin: 4rem 0;
-  animation: 7s slide infinite linear;
+  animation: 10s slide infinite linear;
 }
-section .carousel img{
+.carousel img{
   height: 70px;
   margin: 3rem;
 }
 /*Media Queries*/
-/* @media (min-width:576px) and (max-width) {
-  html {font-size: 25%;}
+@media (min-width:320px) and (max-width:400px) {
+  html{ font-size: 20%;}
+  .list-container .menu-computadora {display: none;}/* 
+  .img-container {height: 89rem; width: 22rem; margin: 2rem 55rem 0 5rem;} */
+  .img-container-inicio {display: none;}
+  .horizontal-line { display: none; /*  height: 45rem; margin: 5rem 5rem 0 2rem;
+    border: 0.5rem solid; */}
+  #inicio {height: 100%; margin: 3rem 2rem 17rem 0;}
+  .content .parrafo-INVIA {white-space: nowrap;}
+  #header .list-container {display: none;}
+  .menu-smartphone {height: 100%; width: 100%;}
+  .aside-logo-container {z-index: 3; position: relative; right: 2px; margin-right: 0;}
 }
-@media (max-width: 992px){}
+@media (min-width:401px) and (max-width:460px) {
+  html{ font-size: 15%;}
+  .list-container .menu-computadora {display: none;}
+  .img-container-inicio {height: 89rem; width: 22rem; margin: 2rem 55rem 0 5rem;}
+  .horizontal-line { display: none; /*  height: 45rem; margin: 5rem 5rem 0 2rem;
+    border: 0.5rem solid; */}
+  #inicio {height: 100%; margin-bottom: 0;}
+  .content .parrafo-INVIA {white-space: nowrap;}
+  .menu-smartphone {height: 100%; width: 100%;}
+  .menu-smartphone-content .list-element {font-size: 1rem;}
+  .aside-logo-container {z-index: 3;}
+  .menu-responsive {display: none;} 
+}
+@media (min-width: 461px) and (max-width:879px){
+  html{ font-size: 30%;}
+  .list-container .menu-computadora {display: none;}
+  .img-container-inicio {height: 89rem; width: 22rem; margin: 2rem 55rem 0 5rem;}
+  .horizontal-line { height: 45rem; margin: 5rem 5rem 0 2rem;
+    border: 0.5rem solid; }
+  .content .parrafo-INVIA {white-space: nowrap;}
+  .menu-responsive {display: none; }
+}
 
-@media (max-width: 890px){
+@media (min-width: 880px) and (max-width:1100px){
+  html{ font-size: 30%;}
+  .list-container .menu-computadora {display: none;}
+  .img-container-inicio {height: 89rem; width: 22rem; margin: 2rem 55rem 0 5rem;}
+  .horizontal-line { height: 45rem; margin: 5rem 5rem 0 2rem;
+    border: 0.5rem solid; }
+  .content .parrafo-INVIA {white-space: nowrap;}
+  .menu-responsive {display: none;}
 }
-  header .list-container .navbar { display: none;  display: block;  position: fixed;} 
-  header .list-container .navbar .list-element a {display: block;  width: 100%; 
-background-color: var(--VioletaMedio); color: var(--Blanco); margin: 2rem, 0, 2rem, 0;}
-  header .checkbox-btn {
-  display: block; margin-top: 1.3rem; margin-right: 5rem;}
-} 
-@media (min-width) and (max-width){}
-@media (min-width) and (max-width){}
- */
+
+@media (min-width: 1101px) and (max-width:2000px){
+  .menu-responsive {display: none;} 
+  .menu-responsive i {display: none;} 
+  /* .menu-smartphone {display: none;}  */
+}
