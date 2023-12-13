@@ -21,11 +21,8 @@ const myFunction = () => {
     document.body.classList = "lightMode"
   }
 
-  
+
   const toggleMenu = () => {
-    // Select the menu-smartphone element
     let menuElement = document.querySelector(".menu-smartphone");
-  
-    // Toggle the class on the menu element to control visibility
     menuElement.classList.toggle("visible");
-  }; 
+  };

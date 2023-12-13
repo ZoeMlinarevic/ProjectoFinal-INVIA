@@ -47,12 +47,6 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
-.container-c {
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
 body {
   background-color: var(--Negro);
 }
