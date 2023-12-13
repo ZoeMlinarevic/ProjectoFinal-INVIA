@@ -6,12 +6,12 @@
 .c-seccion{
 
 	color: #AAD9D9;
-	font-size: 120%;
+	font-size: 3rem;
 	font-family: 'Poppins', sans-serif;
 	
 }
 .c-grupo-seccion{
-	max-width: 99%;
+	padding: 4rem;
 }
 .c-articulo{
 	display: flex;
@@ -33,25 +33,28 @@
 	width: 60%;
 	display: flex;
 	flex-direction: column;
+	align-items: baseline;
 }
 .c-leyenda div:nth-child(4){
 	text-align: center;
 }
 .c-titulo{
-	font-size: 430%;
+	font-size: 12rem;
+    font-weight: 700;
 	font-family: 'Poppins', sans-serif;
 }
 .c-parrafo{
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.2rem;
+	font-size: 4rem;
 	padding-bottom: 1%;
 }
 .c-boton{
 	color:#fff;
 	border-radius:20px;
-	font-size: 20px;
+	font-size: 5rem;
 	padding: 5px 20px;
 	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
 }
 .c-boton:hover{
 	transform: scale(1.1);
@@ -59,7 +62,6 @@
 .c-leyenda a{
 	text-align: center;
 	text-decoration: none;
-	width: 20%;
 	background:#6430ff;
 }
 .c-leyenda a:hover{
@@ -82,6 +84,7 @@
 	font-size: 1.3rem;
 	margin: 0px;
 	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
 }
 .c-cambio h2{
 	color: #fff;
@@ -118,23 +121,33 @@
 }
 .c-cuadro h4{
 	color: white;
+	font-size: 5rem;
 }
 .c-cuadro p{
 	text-align: center;
 	color: #fff;
-	font-size: 1rem;
+	font-size: 3rem;
 }
 .c-cuadro img{
-	border-radius: 70px;
+	border-radius: 50%;
+    width: 40rem;
+    height: auto;
 }
 .c-valoraciones h2{
 	text-align: center;
 	color: #fff;
-	font-size: 3.5rem;
+	font-size: 12rem;
+}
+.c-estrellas{
+	display: flex;
+    gap: 2rem;
+	padding: 2rem 0 4rem 0;
 }
 .c-estrellas ion-icon{
 	color: orange;
 	transform: scale(1.3);
+	width: 5rem;
+    height: 5rem;
 }
  
 @media screen and (max-width:890px){
@@ -142,17 +155,19 @@
 		display: none;
 	}
 	.c-titulo{
-		font-size: 430%;
+		font-size: 12rem;
+    	font-weight: 700;
 	}
 	.c-parrafo{
 		margin-bottom: 3%;
 	}
-	.c-seccion{
-		font-size: 1rem;
+	.c-boton{
+		font-size: 4rem;
 	}
-	.c-valoraciones h2{
+	.c-seccion{
 		font-size: 3rem;
 	}
+	
 	.c-integrantes{
 		flex-direction: column;
 		margin: 2%;
@@ -175,7 +190,7 @@
 		text-align: center;
 	}
 	.c-cuadro h4{
-		font-size: 2rem;
+		font-size: 4rem;
 	}
 	.c-cuadro p{
 			font-size: 1.5rem;	
