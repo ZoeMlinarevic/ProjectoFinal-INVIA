@@ -2,9 +2,6 @@
 .lightMode{
     background-color: var(--CelesteClaro);
   } 
-  .lightMode #header {
-    background-color: var(--CelesteClaro);
-  }
   .lightMode .inicio .content #estudio {
     background-color: var(--CelesteClaro);
   }
@@ -81,11 +78,16 @@ width: 8rem;
 margin: 1%;
 }
 @media (min-width:320px) and (max-width:359px) {
-html {font-size: 35%;}
-.list-container {display: none;}
-.curso-button {height: 15rem; }
+html {font-size: 20%;}
+.curso-button {height: 25rem; width:95%;}
+.curso-button img {height: 20rem; width: 20rem;}
+.curso-button h2 {padding: 5rem; }
+#header .list-container {display: none;}
 }
-@media (min-width:320px) and (max-width:859px) {
-.list-container {display: none;}
-}
-
+@media (min-width:360px) and (max-width:799px) {
+  html {font-size: 25%;}
+  .curso-button {height: 30rem; width:95%;}
+  .curso-button img {height: 20rem; width: 20rem;}
+  .curso-button h2 {padding: 5rem; }
+  .list-container {display: none;}
+  }
