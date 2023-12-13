@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros</title>
     <link rel="stylesheet" href="/public/css/sobreNos.css">
+    <link rel="stylesheet" href="/public/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">  <!-- se agrego tipografia -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -145,7 +146,68 @@
                     </div>
                 </div>
             </div>
+            
         </div>
+        
     </div>
+    <footer class="footer">
+        <nav class="footer-nav container-c">
+            <div class="footer-nav-div">
+                <div>
+                    <h2><a href="/" class="footer-h2">INVIA</a></h2>
+                    <p class="footer-p">Forjando un mañana brillante a <span>través de educación para todos.</span><span>Conéctate, aprende, ¡crece y</span>  construye tu futuro hoy!</p>
+                    <div class="footer-nav-container-picture">
+                        <picture class="footer-picture-img">
+                            <img src="../assets/img/social/apple.png" alt="Red Social Facebook">
+                        </picture>
+                        <picture class="footer-picture-img">
+                            <img src="../assets/img/social/apple.png" alt="Red Social X">
+                        </picture>
+                        <picture class="footer-picture-img">
+                            <img src="../assets/img/social/apple.png" alt="Red Social Instagram">
+                        </picture>
+                        <picture class="footer-picture-img">
+                            <img src="../assets/img/social/apple.png" alt="Red Social linkedin">
+                        </picture>
+                    </div>
+                </div>
+                <div class="footer-nav-div-mobile-relative">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Equipo</li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Recursos</li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Contactanos</li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Donaciones </li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>App mobile </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav-div">
+                <div class="footer-nav-div-mobile-absolute">
+                    <h3>Cursos</h3>
+                    <ul>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Backend</li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Frontend</li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Base de datos</li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Idiomas</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Newsletter</h3>
+                    <form action="/newsletter/enviado" method="post" id="nesletterform">
+                        <div class="footer-form-div">
+                            <input type="email" name="newsletter" id="newsletter" placeholder="Correo Electronico">
+                            <input type="hidden" name="newsletterReturnTo" id="newsletterReturnTo" value="">
+                            <button type="submit" name="submitNewsletter" id="nesletterbutton">Enviar</button>
+                        </div>
+                        <label for="newsletter">Suscríbete al boletín y obtén beneficios <span>exclusivos. Conoce nuevos cursos, oportunidades</span><span>y novedades. Aprende con una comunidad</span> apasionada.</label>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <p class="footer-p-copyright">@Copyright 2023 | Todos los Derechos Reservados</p>
+    </footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="scripts/index.js"></script> 
 </bodysn>
 </html>

@@ -6,7 +6,7 @@
 
 .contenedorsn {
   display: flex;
-  flex-direction: column; /*de row a column*/
+  flex-direction: column;
   
 }
 
