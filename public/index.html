@@ -15,33 +15,22 @@
     <nav class="list-container">
         <h1 class="list-element"><a href="/" class="logo">INVIA</a></h1>
         <ul class="navbar">
-            <li class="list-element">Explorar
-                <ul class="burger-list-explorar">
-                    <li><a href="">Curso 1</a></li>
-                    <li><a href="">Curso 2</a></li>
-                    <li><a href="">Curso 3</a></li>
-                    <li><a href="">Curso 4</a></li>
-                    <li><a href="">Curso 5</a></li>
-                </ul>
-                </li>
-                <li class="list-element">Comunidad
-                    <ul class="burger-list-comunidad">
-                    <li><a href="">Discord</a></li>
-                    </ul>
-                </li>
+            <li class="list-element"><a href="./pages/cursos.html">Explorar</a></li>
+                <li class="list-element"><a href="">Comunidad</a></li>
                 <li class="list-element"><a href="proposito">Nosotros</a></li>
-                <li class="list-element-btn">Crear Cuenta</li>
-                <li class="list-element-btn" >Login</li>
+                <li class="list-element-btn"><a href="">Crear Cuenta</a></li>
+                <li class="list-element-btn"><a href="">Login</a></li>
             </ul>
         </nav>
-    </header><section class="menu-responsive">
+    </header>
+    <section class="menu-responsive">
         <i class="fa fa-align-justify" style="font-size:20px" onclick="toggleMenu()"></i> 
         <div class="menu-smartphone">
           <div class="menu-smartphone-content">
           <h1 class="logo"><a href="#inicio">INVIA</a></h1>
             <div class="menu-computadora">
             <ul class="navbar">
-                <li class="list-element"><a href="#quienesSomos">Explorar</a>
+                <li class="list-element"><a href="./pages/cursos.html">Explorar</a>
                 <ul class="burger-list-explorar">
                 </ul>
                 </li>
@@ -64,7 +53,7 @@
         <p class="parrafo-INVIA">para la<br>
             Inclusión y Vías de Acceso para el Aprendizaje</p>
             <div class="btn-container">
-                <a href="/Cursos"><button class="btn" id="cursos">Nuestros Cursos</button></a>
+                <a href="./pages/cursos.html"><button class="btn" id="cursos">Nuestros Cursos</button></a>
                 <a href="google.com" rel="noopener" target="_blank"><button class="btn" id="estudio">Guias de Estudio</button></a>
     </div>
     </div>
@@ -79,7 +68,7 @@
             <div class="container">
                 <aside class="sidebar">
                     <label class="switch" id="toggle">
-                    <input type="checkbox" id="switch">
+                    <input type="checkbox" id="switch" onclick="myFunction()">
                     <span class="slider">
                         <div class="actuator">
                         <div class="actuator-background">
