@@ -1,14 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-:root{
-    /*Fonts*/
-    --Poppins: 'Poppins', sans-serif;
-    /*Palette*/
-    --Blanco: white;
-    --Negro: black;
-    --VioletaClaro:#5D60C0;
-    --VioletaMedio:#835CBF;
-    --CelesteClaro:#AAD9D9;
-}
 .lightMode header .list-container .navbar .list-element .btn:hover{
   color: var(--CelesteClaro);
 }
@@ -39,21 +28,6 @@
 .lightMode .body-container-sql{
   background:linear-gradient(#B80081, var(--CelesteClaro))
 }  
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
-  font-family: var(--Poppins);
-  color: var(--Blanco);
-  outline: none;
-  text-decoration: none;
-  list-style: none;
-}
-  html {
-  font-size: 40%;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
 .body-container-py {
   min-height: 100vh;
   background: linear-gradient(#00699E,var(--Negro));
@@ -90,104 +64,6 @@
   min-height: 100vh;
   background: linear-gradient(#083C7D, var(--Negro));
 }
-body {
-  height: 100%;
-  background-color: var(--Negro);
-} 
-/*-----ctrl+D para seleccionar y editar todos los heder al mismo tiempo-----------*/
-header {
-  display: block;
-  height: 13%;
-  margin: 0 0 0 1%;
-}
-header .logo {
-  font-size: 7.8rem;
-  font-weight: bolder;
-  margin-left: 2rem;
-}
-header .navbar {
-  position: fixed;
-    top: 2rem; left: 1rem; right: 0; 
-    padding: 2% 3% 5% 25%;
-    display: flex;
-    font-weight: bold;
-    font-size: 3rem;
-    align-items: center;
-    justify-content: space-between;
-}
-header .list-container .navbar .list-element:hover {
-  transform: scale(1.1);
-  text-shadow: var(--Blanco);
-}
-header .list-container .navbar .list-element:hover .burger-list-explorar {
-  display: block;
-}
-header .list-container .navbar .list-element:hover .burger-list-comunidad {
-  display: block;
-  
-}
-header .list-container .navbar .list-element .btn {
-  border: var(--Blanco) solid 0.4rem;
-  border-radius: 3rem 0 3rem 0;
-  padding: 1rem 7rem;
-}
-header .list-container .navbar .list-element .btn:hover{
-  transform: scale(1.1);
-  background-color: var(--Blanco);
-  color: var(--Negro);
-}
-.burger-list-explorar{ 
-  display: none;
-  position: absolute;
-  white-space: nowrap;
-}
-.burger-list-comunidad{
-  display: none;
-  position: absolute;
-  white-space: nowrap;
-  background-color: var(--Blanco);
-  border-radius: 5%;
-  width: 33rem;
-}
-.burger-list-comunidad li {
-  background-color: var(--Negro);
-  border-radius: 5%;
-  width: 30rem;
-  margin: 5%;
-  padding: 3%;
-}
-.burger-list-comunidad li:hover {
-  background-color: var(--VioletaClaro);
-  color: white;
-}
-.burger-list-explorar{
-  display: none;
-  position: absolute;
-  white-space: nowrap;
-  background-color: var(--Blanco);
-  border-radius: 5%;
-  width: 33rem;
-}
-.burger-list-explorar li {
-  background-color: var(--Negro);
-  border-radius: 5%;
-  width: 30rem;
-  margin: 5%;
-  padding: 3%;
-}
-.burger-list-explorar li:hover {
-  background-color: var(--VioletaClaro);
-  color: var(--Negro);
-}
-.aside-logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 3rem;
-    }
-    .aside-logo {
-      position: fixed;
-    }
     .section-contenido-container-cursos {
       display: flex;
       flex: 1 1 50;

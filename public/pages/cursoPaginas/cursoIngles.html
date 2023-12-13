@@ -4,37 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/public/css/index.css">
     <link rel="stylesheet" href="/public/css/cursoPaginas.css">
     <link rel="stylesheet" href="/public/css/toggle.css">
 </head>
 <body>
   <div class="body-container-ingles">
-    <header>
-        <nav class="list-container">
-            <h1  class="logo"><a href="#inicio">INVIA</a></h1>
-            <ul class="navbar">
-                <li class="list-element"><a href="#quienesSomos">Explorar</a>
-                <ul class="burger-list-explorar">
-                  <li><a href="">Curso 1</a></li>
-                  <li><a href="">Curso 2</a></li>
-                  <li><a href="">Curso 3</a></li>
-                  <li><a href="">Curso 4</a></li>
-                  <li><a href="">Curso 5</a></li>
-                </ul>
-                </li>
-                <li class="list-element"><a href="#servicios">Comunidad</a>
-                  <ul class="burger-list-comunidad">
-                    <li><a href="">Sobre Nosotros</a></li>
-                    <li><a href="">INVIA</a></li>
-                    <li><a href="">Colabora</a></li>
+    
+    <header id="header">
+      <nav class="list-container">
+          <h1 class="list-element"><a href="/" class="logo">INVIA</a></h1>
+          <ul class="navbar">
+              <li class="list-element"><a href="./pages/cursos.html">Explorar</a></li>
+                  <li class="list-element"><a href="">Comunidad</a></li>
+                  <li class="list-element"><a href="proposito">Nosotros</a></li>
+                  <li class="list-element-btn"><a href="">Crear Cuenta</a></li>
+                  <li class="list-element-btn"><a href="">Login</a></li>
+              </ul>
+          </nav>
+      </header>
+      <section class="menu-responsive">
+          <i class="fa fa-align-justify" style="font-size:20px" onclick="toggleMenu()"></i> 
+          <div class="menu-smartphone">
+            <div class="menu-smartphone-content">
+            <h1 class="logo"><a href="#inicio">INVIA</a></h1>
+              <div class="menu-computadora">
+              <ul class="navbar">
+                  <li class="list-element"><a href="./pages/cursos.html">Explorar</a>
+                  <ul class="burger-list-explorar">
                   </ul>
-                </li>
-                <li class="list-element"><a href="proposito">Recursos</a></li>
-                <li class="list-element"><a href="#login" class="btn">Crear Cuenta</a></li>
-                <li class="list-element"><a href="#login" class="btn">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+                  </li>
+                  <li class="list-element"><a href="#servicios">Comunidad</a>
+                    <ul class="burger-list-comunidad">
+                    </ul>
+                  </li>
+                  <li class="list-element"><a href="proposito">Nosotros</a></li>
+                  <li class="list-element"><a href="#login" class="btn">Crear Cuenta</a></li>
+                  <li class="list-element"><a href="#login" class="btn">Login</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </section>
     <section class="aside-logo-container">
         <div class="aside-logo"> 
             <div class="container">
@@ -131,7 +142,8 @@
           </div>
         </div>
       </section>
-        <script src="/public/scripts/boton.js"></script>
+      <script src="/public/scripts/switchToggle.js"></script>
+      <script  type="module" src="/index.js"></script> 
       </div>
 </body>
 </html>
