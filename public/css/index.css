@@ -175,12 +175,12 @@ El @keyframe es para la animacion y el resto para los estilos*/
   padding: 3rem 3rem;
   height: 30rem;
 }
-.inicio .carousel{
+.carousel{
   display: inline-block;
   margin: 4rem 0;
   animation: 10s slide infinite linear;
 }
-.inicio .carousel img{
+.carousel img{
   height: 70px;
   margin: 3rem;
 }
