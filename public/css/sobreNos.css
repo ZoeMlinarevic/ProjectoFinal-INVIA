@@ -1,0 +1,179 @@
+/* Estilos generales */
+/*.bodysn {
+  margin: 0;
+  /* font-family: Arial, sans-serif; 
+}*/
+
+.contenedorsn {
+  display: flex;
+  flex-direction: column; /*de row a column*/
+  
+}
+
+.contenedor2sn {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  border: #cacaca;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Ajuste para la sección de Integrantes dentro del contenedor */
+.contenedor .integrantes-section {
+  flex-direction: row;
+}
+
+.SobreNosotrosRectangulo {
+  width: 100%;
+  background-image: linear-gradient(to bottom, #494c91, #000 50%, rgb(0, 0, 0) 500%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.SobreNosotrosTitulo {
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.SobreNosotrosContenido {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-family: Poppins;
+  font-size: 1.6em;
+  font-weight: 800;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Encabezado "NUESTRO EQUIPO DE INVIA" */
+.SobreNosotrosNEI {
+  width: 100%;
+  font-size: 2.5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Imagen */
+.SobreNosotrosImagen img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* Estilos para el ContenidoSN1 y ContenidoSN2 */
+.ContenidoSN1,
+.ContenidoSN2 {
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
+  /* font-family: Poppins; */ /*Se agrego tipografia en linea 54*/
+  font-size: 1.5em;
+  text-align: left; /*de right a left*/
+  color: #cacaca;
+}
+
+
+.integrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  flex: 1;
+}
+
+.integrante img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.integrante-info {
+  width: 100%;
+  color: #cacaca;
+}
+
+.integrante-info h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.integrante-info p {
+  font-size: 1em;
+  color: #cacaca;
+}
+
+.contactos {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.contactos a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos para la sección de Integrantes */
+.integrantes-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+
+/* Animación de zoom */
+.integrante img,
+.contacto-logo img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.integrante img:hover,
+.contacto-logo img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos adicionales para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .SobreNosotrosRectangulo {
+    padding: 10px;
+  }
+
+  .SobreNosotrosTitulo {
+    font-size: 2.5em;
+  }
+
+  .SobreNosotrosContenido {
+    font-size: 1.3em;
+  }
+
+  .SobreNosotrosNEI {
+    font-size: 2em;
+  }
+
+  .integrante img {
+    max-width: 100px;
+  }
+}

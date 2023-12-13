@@ -10,6 +10,8 @@ const cursos = (req, res, next) => {
     res.sendFile(filePath);
 };
 
+/* EXPLICACION DE LOS CURSOS */
+
 const html = (req, res, next) => {
     const filePath = path.join(__dirname, '../../public/pages/cursoPaginas/cursoHtml.html');
     res.sendFile(filePath);

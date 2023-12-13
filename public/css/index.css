@@ -2,6 +2,7 @@
 @import url(crearCuenta.css);
 @import url(notFound.css);
 @import url(sweetAlert.css);
+@import url(popUpLogin.css);
 @import url(popUpCrearCuenta.css);
 @import url(header.css);
 @import url(toggle.css);
@@ -177,7 +178,7 @@ El @keyframe es para la animacion y el resto para los estilos*/
 .inicio .carousel{
   display: inline-block;
   margin: 4rem 0;
-  animation: 5s slide infinite linear;
+  animation: 10s slide infinite linear;
 }
 .inicio .carousel img{
   height: 70px;
