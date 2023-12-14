@@ -1,8 +1,13 @@
 /* Estilos generales */
-/*.bodysn {
+
+.lightMode .SobreNosotrosRectangulo {
+  background-image: linear-gradient(to bottom, #494c91, var(--CelesteClaro) 50%, rgb(0, 0, 0) 500%);
+} 
+
+.sobrenosotros-conteiner-body {
   margin: 0;
-  /* font-family: Arial, sans-serif; 
-}*/
+   font-family: Arial, sans-serif; 
+}
 
 .contenedorsn {
   display: flex;
@@ -26,65 +31,75 @@
 .SobreNosotrosRectangulo {
   width: 100%;
   background-image: linear-gradient(to bottom, #494c91, #000 50%, rgb(0, 0, 0) 500%);
+  z-index: -1;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding-top: 14rem;
 }
 
 .SobreNosotrosTitulo {
   width: 100%;
-  font-size: 3em;
+  font-size: 7.5rem;
   text-align: center;
   color: #fff;
   font-weight: 500;
-  margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.SobreNosotrosContenido {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto 20px;
-  font-family: Poppins;
-  font-size: 1.6em;
-  font-weight: 800;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-}
-
-/* Encabezado "NUESTRO EQUIPO DE INVIA" */
-.SobreNosotrosNEI {
-  width: 100%;
-  font-size: 2.5em;
-  text-align: center;
-  color: #fff;
-  font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family: 'Poppins', sans-serif;
 }
 
 /* Imagen */
 .SobreNosotrosImagen img {
   width: 100%;
-  max-width: 600px;
-  height: auto;
-  margin: 10px 0;
+  max-width: 45%;
+  border-radius: 4%;
+  margin: 18px;
+  margin-bottom: 10px;
+  float: left;
 }
 
+.SobreNosotrosImagen2 img {
+  width: 100%;
+  max-width: 30%;
+  border-radius: 5.5%;
+  margin: 30px;
+  margin-bottom: 100px;
+  float: right;
+  
+}
+
+.SobreNosotrosContenido {
+  width: 100%;
+  max-width: 800px;
+  font-size: 3.5rem;
+  margin: 40px 0 0 150px;
+  text-align: right;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  
+}
+.SobreNosotrosContenido2 {
+  width: 100%;
+  max-width: 800px;
+  font-size: 3.5rem;
+  margin: 30px;
+  text-align: left;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 100px;
+}
+
+
 /* Estilos para el ContenidoSN1 y ContenidoSN2 */
-.ContenidoSN1,
-.ContenidoSN2 {
+.ContenidoSN1 {
   width: 100%;
   max-width: 800px;
   margin: 10px auto;
-  /* font-family: Poppins; */ /*Se agrego tipografia en linea 54*/
-  font-size: 1.5em;
-  text-align: left; /*de right a left*/
+  font-size: 4rem;
+  text-align: right; 
   color: #cacaca;
 }
-
 
 .integrante {
   display: flex;
@@ -94,7 +109,6 @@
   margin: 10px;
   flex: 1;
 }
-
 .integrante img {
   width: 100%;
   max-width: 150px;
@@ -105,7 +119,14 @@
 
 .integrante-info {
   width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
   color: #cacaca;
+  
 }
 
 .integrante-info h2 {
@@ -156,24 +177,47 @@
   .contenedor {
     flex-direction: column;
   }
-
   .SobreNosotrosRectangulo {
     padding: 10px;
   }
-
   .SobreNosotrosTitulo {
     font-size: 2.5em;
   }
-
   .SobreNosotrosContenido {
     font-size: 1.3em;
   }
-
   .SobreNosotrosNEI {
     font-size: 2em;
   }
-
   .integrante img {
     max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .SobreNosotrosRectangulo {
+    padding: 10px;
+    padding-top: 8rem;
+  }
+
+  .SobreNosotrosTitulo {
+    font-size: 9rem;
+  }
+
+  .SobreNosotrosContenido,
+  .SobreNosotrosContenido2 {
+    font-size: 3.5rem;
+    margin: 10px;
+  }
+  
+  .SobreNosotrosImagen{
+    max-width: 500rem;
+  }
+  .SobreNosotrosImagen2{
+    max-width: 1800rem;
+  }
+  
+  .integrante img {
+    max-width: 80px;
   }
 }

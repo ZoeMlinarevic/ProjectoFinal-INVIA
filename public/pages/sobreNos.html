@@ -5,48 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/toggle.css">
     <link rel="stylesheet" href="../css/sobreNos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">  <!-- se agrego tipografia -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
-
 </head>
 
-<bodysn>
-    <div class="SobreNosotrosRectangulo">
-        <span class="SobreNosotrosTitulo">
-            CONOCE A NUESTRO EQUIPO
-        </span>
-        <h1 class="SobreNosotrosContenido">
-            Este proyecto fue creado gracias al compromiso y trabajo de nuestros desarrolladores, quienes le otorgaron
-            su tiempo y dedicación a crear esta plataforma educativa. En este espacio les
-            brindamos su reconocimiento, compartiéndoles sus perfiles y contactos así pueden conectar con
-            nuestros profesionales.
-        </h1>
-        <div class="SobreNosotrosNEI">
-            NUESTRO EQUIPO DE INVIA
-        </div>
-        <div class="contenedorsn">
-            <div class="SobreNosotrosImagen">
-                <img src="../assets/sobreNos/sobrenosotros.jpg" alt="Descripción de la imagen">
+<body class="sobrenosotros-conteiner-body">
+    <header id="header">
+        <nav class="list-container">
+            <h1 class="list-element"><a href="/" class="logo">INVIA</a></h1>
+            <ul class="navbar">
+                <li class="list-element"><a href="./pages/cursos.html">Explorar</a></li>
+                    <li class="list-element"><a href="">Comunidad</a></li>
+                    <li class="list-element"><a href="/Sobre-Nosotros">Nosotros</a></li>
+                    <li class="list-element-btn"><a href="">Crear Cuenta</a></li>
+                    <li class="list-element-btn"><a href="">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="menu-responsive">
+            <i class="fa fa-align-justify" style="font-size:20px" onclick="toggleMenu()"></i> 
+            <div class="menu-smartphone">
+              <div class="menu-smartphone-content">
+              <h1 class="logo"><a href="#inicio">INVIA</a></h1>
+                <div class="menu-computadora">
+                <ul class="navbar">
+                    <li class="list-element"><a href="./pages/cursos.html">Explorar</a>
+                    <ul class="burger-list-explorar">
+                    </ul>
+                    </li>
+                    <li class="list-element"><a href="#servicios">Comunidad</a>
+                      <ul class="burger-list-comunidad">
+                      </ul>
+                    </li>
+                    <li class="list-element"><a href="proposito">Nosotros</a></li>
+                    <li class="list-element"><a href="#login" class="btn">Crear Cuenta</a></li>
+                    <li class="list-element"><a href="#login" class="btn">Login</a></li>
+                </ul>
+                </div>
+              </div>
             </div>
-            <div class="contenedor2sn">
-                <div class="ContenidoSN1">
+          </section>
+
+          <section class="aside-logo-container">
+            <div class="aside-logo">
+                <div class="container">
+                    <aside class="sidebar">
+                        <label class="switch" id="toggle">
+                        <input type="checkbox" id="switch" onclick="myFunction()">
+                        <span class="slider">
+                            <div class="actuator">
+                            <div class="actuator-background">
+                                <div class="moon">
+                                <div class="crater moon-crater-1">
+                                </div>
+                                <div class="crater moon-crater-2">
+                                </div>
+                                <div class="crater moon-crater-3">
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="actuator-shadow actuator-shadow-1">
+                            </div>
+                            <div class="actuator-shadow actuator-shadow-2">
+                            </div>
+                            <div class="actuator-shadow actuator-shadow-3">
+                            </div>
+                            <div class="slider-background">
+                            <div class="day">
+                                <div class="clouds">
+                                <div class="cloud cloud-1">
+                                </div>
+                                <div class="cloud cloud-2">
+                                </div>
+                                <div class="cloud cloud-3">
+                                </div>
+                            </div>
+                            <div class="dimmed-clouds">
+                                <div class="cloud dimmed cloud-1">
+                                </div>
+                                <div class="cloud dimmed cloud-2">
+                                </div>
+                                <div class="cloud dimmed cloud-3">
+                                </div>
+                            </div>
+                            </div>
+                            <div class="night">
+                            <div class="stars">
+                                <div class="star star-1">
+                                </div>
+                                <div class="star star-2">
+                                </div>
+                                <div class="star star-3">
+                                </div>
+                                <div class="star star-4">
+                                </div>
+                                <div class="star star-5">
+                                </div>
+                                <div class="star star-6">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </span>
+                    </label>
+                    </aside>
+                    </div>
+            </div> 
+            </section>
+        </section>
+
+    <div class="SobreNosotrosRectangulo">
+        <div class="SobreNosotrosTitulo">
+            ¿QUIENES SOMOS?
+        </div>
+
+        <div class="contenedorSobreNos">
+            <div class="SobreNosotrosImagen">
+                <img src="../assets/sobreNos/artech2.jpg" alt="imagen">
+            </div>
+                <h1 class="SobreNosotrosContenido">
+                    Este proyecto fue creado gracias al compromiso y trabajo de nuestros desarrolladores, 
+                    quienes le otorgaron
+                    su tiempo y dedicación a crear esta plataforma educativa. En este espacio les
+                    brindamos su reconocimiento, compartiéndoles sus perfiles y contactos así pueden conectar con
+                    nuestros profesionales y todas las personas que nos ayudaron en el dia a dia.
+                
+                </h1>
+            
+        </div>
+
+            <div class="SobreNosotrosTitulo">
+                NUESTRO EQUIPO DE INVIA
+            </div>
+            <div class="SobreNosotrosImagen2">
+                <img src="../assets/sobreNos/equiposobrenos.jpg" alt="imagen">
+                <h1 class="SobreNosotrosContenido2">
                     Este proyecto fue creado gracias al compromiso y trabajo de nuestros desarrolladores, 
                     quienes le otorgaron su tiempo y dedicación a crear esta plataforma educativa. En este
                     espacio les brindamos su reconocimiento, compartiéndoles sus perfiles y contactos así 
                     pueden conectar con nuestros
-                </div>
-                <div class="ContenidoSN2">
                     Este proyecto fue creado gracias al compromiso y trabajo de nuestros desarrolladores,
                     quienes le otorgaron su tiempo y dedicación a crear esta plataforma educativa.
                     En este espacio les brindamos su reconocimiento, compartiéndoles sus perfiles y contactos
                     así pueden conectar con nuestros profesionales.
-                </div>
+                </h1>
             </div>
         </div>
 
@@ -77,7 +188,7 @@
                 <img src="../assets/sobreNos/braian.jpg" alt="Int 2">
                 <div class="integrante-info">
                     <h2>Gomez Braian</h2>
-                    <p>Licenciatura en Sistemas - Estudiante de Fundacion Pescar/Artech</p>
+                    <p>Licenciatura en Sistemas- UNLa - Fundacion Pescar/Artech</p>
                     <!-- Enlaces de Contacto -->
                     <div class="contactos">
                         <a href="https://www.linkedin.com/in/braian-gomez" target="_blank" class="contacto-logo">
@@ -209,5 +320,6 @@
     </footer>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script type="module" src="../scripts/index.js"></script> 
-</bodysn>
+    <script src="../scripts/switchToggle.js"></script>
+</body>
 </html>

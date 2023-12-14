@@ -25,4 +25,5 @@ const myFunction = () => {
   const toggleMenu = () => {
     let menuElement = document.querySelector(".menu-smartphone");
     menuElement.classList.toggle("visible");
+    console.log("h")
   };

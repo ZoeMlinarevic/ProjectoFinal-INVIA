@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SQL</title>
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="../../css/cursoPaginas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
   <div class="body-container-sql">
@@ -125,7 +126,7 @@
         </div>
         <div class="imagen-container-cursos">
           <div class="img-container">
-            <img src="/public/assets/img/Logos/servidor-sql.png" alt="sql-img">
+            <img src="../../assets/img/Logos/servidor-sql.png" alt="sql-img">
           </div>
           <div class="horizontal-line-container-cursos">
             <hr class="horizontal-line-cursos">
@@ -141,8 +142,65 @@
           </div>
         </div>
       </section>
-      <script src="/public/scripts/switchToggle.js"></script>
-      <script  type="module" src="/index.js"></script> 
+      <footer class="footer">
+        <nav class="footer-nav container-c">
+            <div class="footer-nav-div">
+                <div>
+                    <h2><a href="/" class="footer-h2">INVIA</a></h2>
+                    <p class="footer-p">Forjando un mañana brillante a <span>través de educación para todos.</span><span>Conéctate, aprende, ¡crece y</span>  construye tu futuro hoy!</p>
+                    <div class="footer-nav-container-picture">
+                        <picture class="footer-picture-img">
+                            <img src="../../assets/img/social/apple.png" alt="Red Social Facebook">
+                        </picture>
+                        <picture class="footer-picture-img">
+                            <img src="../../assets/img/social/apple.png" alt="Red Social X">
+                        </picture>
+                        <picture class="footer-picture-img">
+                            <img src="../../assets/img/social/apple.png" alt="Red Social Instagram">
+                        </picture>
+                        <picture class="footer-picture-img">
+                            <img src="../../assets/img/social/apple.png" alt="Red Social linkedin">
+                        </picture>
+                    </div>
+                </div>
+                <div class="footer-nav-div-mobile-relative">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Equipo</li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Recursos</li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Contactanos</li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Donaciones </li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>App mobile </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav-div">
+                <div class="footer-nav-div-mobile-absolute">
+                    <h3>Cursos</h3>
+                    <ul>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Backend</li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Frontend</li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Base de datos</li>
+                        <li><box-icon name='chevron-right' animation='tada' color='#5d60c0'></box-icon>Idiomas</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Newsletter</h3>
+                    <form action="/newsletter/enviado" method="post" id="nesletterform">
+                        <div class="footer-form-div">
+                            <input type="email" name="newsletter" id="newsletter" placeholder="Correo Electronico">
+                            <input type="hidden" name="newsletterReturnTo" id="newsletterReturnTo" value="">
+                            <button type="submit" name="submitNewsletter" id="nesletterbutton">Enviar</button>
+                        </div>
+                        <label for="newsletter">Suscríbete al boletín y obtén beneficios <span>exclusivos. Conoce nuevos cursos, oportunidades</span><span>y novedades. Aprende con una comunidad</span> apasionada.</label>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <p class="footer-p-copyright">@Copyright 2023 | Todos los Derechos Reservados</p>
+    </footer>
       </div>
+      <script src="../../scripts/switchToggle.js"></script>
+      <script  type="module" src="../../scripts/index.js"></script> 
 </body>
 </html>
