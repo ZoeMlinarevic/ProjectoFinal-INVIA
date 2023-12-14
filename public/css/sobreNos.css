@@ -201,15 +201,22 @@
   }
 
   .SobreNosotrosTitulo {
-    font-size: 4.5rem;
+    font-size: 9rem;
   }
 
   .SobreNosotrosContenido,
   .SobreNosotrosContenido2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
     margin: 10px;
   }
-
+  
+  .SobreNosotrosImagen{
+    max-width: 500rem;
+  }
+  .SobreNosotrosImagen2{
+    max-width: 1800rem;
+  }
+  
   .integrante img {
     max-width: 80px;
   }
