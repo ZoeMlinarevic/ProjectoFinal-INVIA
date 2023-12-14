@@ -11,6 +11,7 @@ import mainRouter from "./src/routes/mainRouter.js";
 import cursosRouter from "./src/routes/cursosRouter.js";
 import crearCuentaEstudianteRouter from "./src/routes/crearCuentaEstudianteRouter.js";
 import newsletter from "./src/routes/newsletterRouter.js";
+import sobreNosotros from "./src/routes/sobreNosotrosRouter.js";
 
 // MERCADO PAGO
 // import createOrderRouter from "./src/routes/payments/mercadoPago/createOrderRouter.js";
@@ -36,6 +37,7 @@ app.use(express.json());
 app.use("./", mainRouter);
 app.use("/Cursos", cursosRouter);
 app.use("/Crear-Cuenta-Estudiante", crearCuentaEstudianteRouter);
+app.use("/Sobre-Nosotros", sobreNosotros);
 
 // RUTAS DE NEWSLETTER
 
