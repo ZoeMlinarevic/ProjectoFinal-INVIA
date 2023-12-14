@@ -1,4 +1,9 @@
 /* Estilos generales */
+
+.lightMode .SobreNosotrosRectangulo {
+  background-image: linear-gradient(to bottom, #494c91, var(--CelesteClaro) 50%, rgb(0, 0, 0) 500%);
+} 
+
 .sobrenosotros-conteiner-body {
   margin: 0;
    font-family: Arial, sans-serif; 
@@ -26,6 +31,7 @@
 .SobreNosotrosRectangulo {
   width: 100%;
   background-image: linear-gradient(to bottom, #494c91, #000 50%, rgb(0, 0, 0) 500%);
+  z-index: -1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,18 +69,16 @@
   
 }
 
-
 .SobreNosotrosContenido {
   width: 100%;
   max-width: 800px;
   font-size: 3.5rem;
-  margin: 20px;
+  margin: 40px 0 0 150px;
   text-align: right;
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  margin-left: 100px;
+  
 }
-
 .SobreNosotrosContenido2 {
   width: 100%;
   max-width: 800px;
@@ -173,24 +177,40 @@
   .contenedor {
     flex-direction: column;
   }
-
   .SobreNosotrosRectangulo {
     padding: 10px;
   }
-
   .SobreNosotrosTitulo {
     font-size: 2.5em;
   }
-
   .SobreNosotrosContenido {
     font-size: 1.3em;
   }
-
   .SobreNosotrosNEI {
     font-size: 2em;
   }
-
   .integrante img {
     max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .SobreNosotrosRectangulo {
+    padding: 10px;
+    padding-top: 8rem;
+  }
+
+  .SobreNosotrosTitulo {
+    font-size: 4.5rem;
+  }
+
+  .SobreNosotrosContenido,
+  .SobreNosotrosContenido2 {
+    font-size: 2rem;
+    margin: 10px;
+  }
+
+  .integrante img {
+    max-width: 80px;
   }
 }
