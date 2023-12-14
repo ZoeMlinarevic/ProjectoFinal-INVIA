@@ -84,10 +84,6 @@
     background-color: var(--Blanco);
     color: var(--Negro);
   }
-  
-  #header .list-container a:hover{
-    color: var(--Negro);
-  }
   .fa-align-justify {
     position: absolute;
     top: 5%;
