@@ -7,6 +7,11 @@
     font-size: 7.8rem;
     font-weight: bolder;
     margin-left: 2rem;
+    z-index: 2;
+    position: relative;
+  }
+  #header .logo:hover {
+    color: var(--Blanco);
   }
   #header .navbar {
     position: fixed;
@@ -82,10 +87,6 @@
   #header .list-container .navbar .list-element-btn:hover{
     transform: scale(1.1);
     background-color: var(--Blanco);
-    color: var(--Negro);
-  }
-  
-  #header .list-container a:hover{
     color: var(--Negro);
   }
   .fa-align-justify {
