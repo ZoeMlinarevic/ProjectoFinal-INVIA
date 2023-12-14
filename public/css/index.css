@@ -199,7 +199,7 @@ El @keyframe es para la animacion y el resto para los estilos*/
   .content .parrafo-INVIA {white-space: nowrap;}
   #header .list-container {display: none;}
   .menu-smartphone {height: 100%; width: 100%;}
-  .aside-logo-container {z-index: 3; position: relative; right: 2px; margin-right: 0;}
+  .aside-logo-container {position: relative; right: 2px; margin-right: 0;}
 }
 @media (min-width:401px) and (max-width:460px) {
   html{ font-size: 15%;}
