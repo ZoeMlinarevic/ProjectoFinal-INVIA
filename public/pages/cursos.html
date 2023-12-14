@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assests/img/Invia.png" type="image/x-icon">
     <title>INVIA - CURSOS</title>
+    <link rel="shortcut icon" href="../assets/img/Logos/Invia.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/curso.css">
     <link rel="stylesheet" href="../css/index.css">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -15,7 +17,7 @@
     <nav class="list-container">
         <h1 class="list-element"><a href="/" class="logo">INVIA</a></h1>
         <ul class="navbar">
-            <li class="list-element"><a href="./pages/cursos.html">Explorar</a></li>
+            <li class="list-element"><a href="/cursos">Explorar</a></li>
                 <li class="list-element"><a href="">Comunidad</a></li>
                 <li class="list-element"><a href="proposito">Nosotros</a></li>
                 <li class="list-element-btn"><a href="">Crear Cuenta</a></li>
@@ -24,28 +26,28 @@
         </nav>
     </header>
     <section class="menu-responsive">
-        <i class="fa fa-align-justify" style="font-size:20px" onclick="toggleMenu()"></i> 
-        <div class="menu-smartphone">
-          <div class="menu-smartphone-content">
-          <h1 class="logo"><a href="#inicio">INVIA</a></h1>
-            <div class="menu-computadora">
-            <ul class="navbar">
-                <li class="list-element"><a href="./pages/cursos.html">Explorar</a>
-                <ul class="burger-list-explorar">
+      <i class="fa fa-align-justify" style="font-size:20px" onclick="toggleMenu()"></i> 
+      <div class="menu-smartphone">
+        <div class="menu-smartphone-content">
+        <h1 class="logo"><a href="#inicio">INVIA</a></h1>
+          <div class="menu-computadora">
+          <ul class="navbar">
+              <li class="list-element"><a href="/cursos">Explorar</a>
+              <ul class="burger-list-explorar">
+              </ul>
+              </li>
+              <li class="list-element"><a href="/Sobre-Nosotros">Comunidad</a>
+                <ul class="burger-list-comunidad">
                 </ul>
-                </li>
-                <li class="list-element"><a href="#servicios">Comunidad</a>
-                  <ul class="burger-list-comunidad">
-                  </ul>
-                </li>
-                <li class="list-element"><a href="proposito">Nosotros</a></li>
-                <li class="list-element"><a href="#login" class="btn">Crear Cuenta</a></li>
-                <li class="list-element"><a href="#login" class="btn">Login</a></li>
-            </ul>
-            </div>
+              </li>
+              <li class="list-element"><a href="proposito">Nosotros</a></li>
+              <li class="list-element"><a href="#login" class="btn">Crear Cuenta</a></li>
+              <li class="list-element"><a href="#login" class="btn">Login</a></li>
+          </ul>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     <section class="aside-logo-container">
         <div class="aside-logo"> 
             <div class="container">
@@ -123,6 +125,7 @@
         </div>
         <!-- Lo que hice aca fue los botones de curso, dentro tiene los logos en imagen-->
     <section class="cursos">
+
         <button class="curso-button" id="btn-logica">
           <div class="image-boton-curso-container">
             <img src="assets/img/Logos/codigo.png" alt="codigo">
@@ -258,7 +261,10 @@
       </nav>
       <p class="footer-p-copyright">@Copyright 2023 | Todos los Derechos Reservados</p>
   </footer>
-  <script type="module" src="../scripts/index.js"></script>
-  <script src="../scripts/switchToggle.js"></script> 
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script type="module" src="../scripts/index.js"></script>
+<script src="../scripts/switchToggle.js"></script>  
 </body>
 </html>
